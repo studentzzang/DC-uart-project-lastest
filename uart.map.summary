@@ -1,7 +1,7 @@
-Analysis & Synthesis Status : Failed - Wed Jun 10 01:36:57 2026
+Analysis & Synthesis Status : Failed - Wed Jun 10 04:18:01 2026
 Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 Revision Name : uart
-Top-level Entity Name : top
+Top-level Entity Name : rx
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A until Partition Merge
 Total registers : N/A until Partition Merge

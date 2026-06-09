@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Wed Jun 10 01:36:57 2026
+Wed Jun 10 04:18:01 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -10,7 +10,10 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component
+  6. Parameter Settings for User Entity Instance: lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component
+  7. Parameter Settings for User Entity Instance: rx_fsm:inst
+  8. Analysis & Synthesis Messages
 
 
 
@@ -36,10 +39,10 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Jun 10 01:36:57 2026           ;
+; Analysis & Synthesis Status ; Failed - Wed Jun 10 04:18:01 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; uart                                        ;
-; Top-level Entity Name       ; top                                         ;
+; Top-level Entity Name       ; rx                                          ;
 ; Family                      ; Cyclone V                                   ;
 ; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
 ; Total registers             ; N/A until Partition Merge                   ;
@@ -57,7 +60,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; top                ; uart               ;
+; Top-level entity name                                                           ; rx                 ; uart               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
@@ -143,8 +146,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 8           ;
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -154,16 +157,75 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
++--------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component ;
++------------------------+------------+------------------------------------------------------------+
+; Parameter Name         ; Value      ; Type                                                       ;
++------------------------+------------+------------------------------------------------------------+
+; LPM_WIDTH              ; 3          ; Signed Integer                                             ;
+; LPM_DECODES            ; 8          ; Signed Integer                                             ;
+; LPM_PIPELINE           ; 0          ; Untyped                                                    ;
+; CASCADE_CHAIN          ; MANUAL     ; Untyped                                                    ;
+; DEVICE_FAMILY          ; Cyclone V  ; Untyped                                                    ;
+; CBXI_PARAMETER         ; decode_04f ; Untyped                                                    ;
+; AUTO_CARRY_CHAINS      ; ON         ; AUTO_CARRY                                                 ;
+; IGNORE_CARRY_BUFFERS   ; OFF        ; IGNORE_CARRY                                               ;
+; AUTO_CASCADE_CHAINS    ; ON         ; AUTO_CASCADE                                               ;
+; IGNORE_CASCADE_BUFFERS ; OFF        ; IGNORE_CASCADE                                             ;
++------------------------+------------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component ;
++------------------------+-------------+--------------------------------------------------------------+
+; Parameter Name         ; Value       ; Type                                                         ;
++------------------------+-------------+--------------------------------------------------------------+
+; AUTO_CARRY_CHAINS      ; ON          ; AUTO_CARRY                                                   ;
+; IGNORE_CARRY_BUFFERS   ; OFF         ; IGNORE_CARRY                                                 ;
+; AUTO_CASCADE_CHAINS    ; ON          ; AUTO_CASCADE                                                 ;
+; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                               ;
+; LPM_WIDTH              ; 3           ; Signed Integer                                               ;
+; LPM_DIRECTION          ; UP          ; Untyped                                                      ;
+; LPM_MODULUS            ; 0           ; Untyped                                                      ;
+; LPM_AVALUE             ; UNUSED      ; Untyped                                                      ;
+; LPM_SVALUE             ; UNUSED      ; Untyped                                                      ;
+; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                      ;
+; DEVICE_FAMILY          ; Cyclone V   ; Untyped                                                      ;
+; CARRY_CHAIN            ; MANUAL      ; Untyped                                                      ;
+; CARRY_CHAIN_LENGTH     ; 48          ; CARRY_CHAIN_LENGTH                                           ;
+; NOT_GATE_PUSH_BACK     ; ON          ; NOT_GATE_PUSH_BACK                                           ;
+; CARRY_CNT_EN           ; SMART       ; Untyped                                                      ;
+; LABWIDE_SCLR           ; ON          ; Untyped                                                      ;
+; USE_NEW_VERSION        ; TRUE        ; Untyped                                                      ;
+; CBXI_PARAMETER         ; cntr_83j    ; Untyped                                                      ;
++------------------------+-------------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: rx_fsm:inst ;
++----------------+-------+---------------------------------+
+; Parameter Name ; Value ; Type                            ;
++----------------+-------+---------------------------------+
+; IDLE           ; 0     ; Signed Integer                  ;
+; START          ; 1     ; Signed Integer                  ;
+; DATA           ; 2     ; Signed Integer                  ;
+; STOP           ; 3     ; Signed Integer                  ;
++----------------+-------+---------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 01:36:49 2026
+    Info: Processing started: Wed Jun 10 04:17:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
     Info (12023): Found entity 1: top
 Info (12021): Found 1 design units, including 1 entities, in source file rx.bdf
@@ -172,14 +234,62 @@ Info (12021): Found 1 design units, including 1 entities, in source file baud_ge
     Info (12023): Found entity 1: baud_gen_
 Info (12021): Found 1 design units, including 1 entities, in source file tx.bdf
     Info (12023): Found entity 1: tx
-Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "tx" for hierarchy "tx:inst2"
-Error (275019): Can't open file C:/github/digitalsystem_teamproject/DC-uart-project/tx.bdf
-Error (12152): Can't elaborate user hierarchy "tx:inst2"
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+Info (12127): Elaborating entity "rx" for the top level hierarchy
+Warning (275011): Block or symbol "rx_fsm" of instance "inst" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
+Warning (275011): Block or symbol "AND3" of instance "AND1" overlaps another block or symbol
+Warning (275089): Not all bits in bus "data_out[6..0]" are used
+Warning (275080): Converted elements in bus name "data_out" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "data_out[2]" to "data_out2"
+    Warning (275081): Converted element name(s) from "data_out[3]" to "data_out3"
+    Warning (275081): Converted element name(s) from "data_out[1]" to "data_out1"
+    Warning (275081): Converted element name(s) from "data_out[6]" to "data_out6"
+    Warning (275081): Converted element name(s) from "data_out[4]" to "data_out4"
+    Warning (275081): Converted element name(s) from "data_out[0]" to "data_out0"
+Warning (275043): Pin "rx_cnt[2..0]" is missing source
+Warning (275008): Primitive "AND2" of instance "inst22" not used
+Warning (275008): Primitive "DFFE" of instance "inst23" not used
+Warning (275008): Primitive "DFFE" of instance "inst24" not used
+Warning (12125): Using design file lpm_decode_3.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lpm_decode_3 File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 39
+Info (12128): Elaborating entity "lpm_decode_3" for hierarchy "lpm_decode_3:inst28"
+Info (12128): Elaborating entity "lpm_decode" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
+Info (12130): Elaborated megafunction instantiation "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
+Info (12133): Instantiated megafunction "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" with the following parameter: File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
+    Info (12134): Parameter "lpm_decodes" = "8"
+    Info (12134): Parameter "lpm_type" = "LPM_DECODE"
+    Info (12134): Parameter "lpm_width" = "3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/decode_04f.tdf
+    Info (12023): Found entity 1: decode_04f File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/decode_04f.tdf Line: 22
+Info (12128): Elaborating entity "decode_04f" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component|decode_04f:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
+Warning (12125): Using design file lpm_counter_3.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lpm_counter_3 File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 39
+Info (12128): Elaborating entity "lpm_counter_3" for hierarchy "lpm_counter_3:inst26"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
+Info (12130): Elaborated megafunction instantiation "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
+Info (12133): Instantiated megafunction "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_83j.tdf
+    Info (12023): Found entity 1: cntr_83j File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_83j.tdf Line: 25
+Info (12128): Elaborating entity "cntr_83j" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_83j:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+Warning (12125): Using design file rx_fsm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: rx_fsm File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/rx_fsm.v Line: 22
+Info (12128): Elaborating entity "rx_fsm" for hierarchy "rx_fsm:inst"
+Info (12128): Elaborating entity "74138" for hierarchy "74138:inst5"
+Info (12130): Elaborated megafunction instantiation "74138:inst5"
+Info (12128): Elaborating entity "XOR4" for hierarchy "XOR4:inst1"
+Info (12130): Elaborated megafunction instantiation "XOR4:inst1"
+Error (12002): Port "OUT1" does not exist in macrofunction "inst4"
+Error (12002): Port "OUT1" does not exist in macrofunction "inst3"
+Error (12002): Port "OUT1" does not exist in macrofunction "inst1"
+Error (12002): Port "cout" does not exist in macrofunction "inst26"
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 19 warnings
     Error: Peak virtual memory: 4792 megabytes
-    Error: Processing ended: Wed Jun 10 01:36:57 2026
-    Error: Elapsed time: 00:00:08
-    Error: Total CPU time (on all processors): 00:00:13
+    Error: Processing ended: Wed Jun 10 04:18:01 2026
+    Error: Elapsed time: 00:00:13
+    Error: Total CPU time (on all processors): 00:00:24
 
 
