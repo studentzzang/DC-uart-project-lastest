@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Wed Jun 10 02:56:50 2026
+Wed Jun 10 03:48:41 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Jun 10 02:56:50 2026           ;
+; Analysis & Synthesis Status ; Failed - Wed Jun 10 03:48:41 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; uart                                        ;
 ; Top-level Entity Name       ; top                                         ;
@@ -160,7 +160,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 02:56:40 2026
+    Info: Processing started: Wed Jun 10 03:48:32 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -173,12 +173,71 @@ Info (12021): Found 1 design units, including 1 entities, in source file baud_ge
 Info (12021): Found 1 design units, including 1 entities, in source file tx.bdf
     Info (12023): Found entity 1: tx
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Error (275023): Width mismatch in data_out[3..0] -- source is ""data_out[7..0]" (ID rx:inst3)"
-Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4792 megabytes
-    Error: Processing ended: Wed Jun 10 02:56:50 2026
-    Error: Elapsed time: 00:00:10
-    Error: Total CPU time (on all processors): 00:00:15
+Info (12128): Elaborating entity "tx" for hierarchy "tx:inst2"
+Warning (275008): Primitive "AND2" of instance "inst4" not used
+Warning (12125): Using design file lpm_mux_4to1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lpm_mux_4to1 File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_4to1.v Line: 39
+Info (12128): Elaborating entity "lpm_mux_4to1" for hierarchy "tx:inst2|lpm_mux_4to1:inst43"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "tx:inst2|lpm_mux_4to1:inst43|lpm_mux:LPM_MUX_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_4to1.v Line: 73
+Info (12130): Elaborated megafunction instantiation "tx:inst2|lpm_mux_4to1:inst43|lpm_mux:LPM_MUX_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_4to1.v Line: 73
+Info (12133): Instantiated megafunction "tx:inst2|lpm_mux_4to1:inst43|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_4to1.v Line: 73
+    Info (12134): Parameter "lpm_size" = "4"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "1"
+    Info (12134): Parameter "lpm_widths" = "2"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_sjc.tdf
+    Info (12023): Found entity 1: mux_sjc File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/mux_sjc.tdf Line: 22
+Info (12128): Elaborating entity "mux_sjc" for hierarchy "tx:inst2|lpm_mux_4to1:inst43|lpm_mux:LPM_MUX_component|mux_sjc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Warning (12125): Using design file lpm_mux_8.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lpm_mux_8 File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_8.v Line: 39
+Info (12128): Elaborating entity "lpm_mux_8" for hierarchy "tx:inst2|lpm_mux_8:inst41"
+Info (12128): Elaborating entity "lpm_mux" for hierarchy "tx:inst2|lpm_mux_8:inst41|lpm_mux:LPM_MUX_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_8.v Line: 85
+Info (12130): Elaborated megafunction instantiation "tx:inst2|lpm_mux_8:inst41|lpm_mux:LPM_MUX_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_8.v Line: 85
+Info (12133): Instantiated megafunction "tx:inst2|lpm_mux_8:inst41|lpm_mux:LPM_MUX_component" with the following parameter: File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_mux_8.v Line: 85
+    Info (12134): Parameter "lpm_size" = "8"
+    Info (12134): Parameter "lpm_type" = "LPM_MUX"
+    Info (12134): Parameter "lpm_width" = "1"
+    Info (12134): Parameter "lpm_widths" = "3"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mux_1kc.tdf
+    Info (12023): Found entity 1: mux_1kc File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/mux_1kc.tdf Line: 22
+Info (12128): Elaborating entity "mux_1kc" for hierarchy "tx:inst2|lpm_mux_8:inst41|lpm_mux:LPM_MUX_component|mux_1kc:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_mux.tdf Line: 86
+Warning (12125): Using design file tx_fsm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: tx_fsm File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/tx_fsm.v Line: 22
+Info (12128): Elaborating entity "tx_fsm" for hierarchy "tx:inst2|tx_fsm:inst"
+Info (12128): Elaborating entity "baud_gen_" for hierarchy "baud_gen_:inst"
+Warning (12125): Using design file lpm_counter_13.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: lpm_counter_13 File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_13.v Line: 39
+Info (12128): Elaborating entity "lpm_counter_13" for hierarchy "baud_gen_:inst|lpm_counter_13:lpm_counter_13"
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "baud_gen_:inst|lpm_counter_13:lpm_counter_13|lpm_counter:LPM_COUNTER_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_13.v Line: 68
+Info (12130): Elaborated megafunction instantiation "baud_gen_:inst|lpm_counter_13:lpm_counter_13|lpm_counter:LPM_COUNTER_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_13.v Line: 68
+Info (12133): Instantiated megafunction "baud_gen_:inst|lpm_counter_13:lpm_counter_13|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_13.v Line: 68
+    Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
+    Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
+    Info (12134): Parameter "lpm_width" = "13"
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_2gi.tdf
+    Info (12023): Found entity 1: cntr_2gi File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/cntr_2gi.tdf Line: 25
+Info (12128): Elaborating entity "cntr_2gi" for hierarchy "baud_gen_:inst|lpm_counter_13:lpm_counter_13|lpm_counter:LPM_COUNTER_component|cntr_2gi:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+Info (12128): Elaborating entity "rx" for hierarchy "rx:inst5"
+Warning (275011): Block or symbol "rx_fsm" of instance "inst" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "asff" overlaps another block or symbol
+Warning (275011): Block or symbol "XOR" of instance "ter" overlaps another block or symbol
+Warning (275011): Block or symbol "XOR" of instance "afa" overlaps another block or symbol
+Warning (275011): Block or symbol "XOR" of instance "wqv" overlaps another block or symbol
+Warning (275089): Not all bits in bus "data_out[6..0]" are used
+Warning (275080): Converted elements in bus name "data_out" using legacy naming rules. Make any assignments on the new names, not on the original names.
+    Warning (275081): Converted element name(s) from "data_out[2]" to "data_out2"
+    Warning (275081): Converted element name(s) from "data_out[3]" to "data_out3"
+    Warning (275081): Converted element name(s) from "data_out[1]" to "data_out1"
+    Warning (275081): Converted element name(s) from "data_out[6]" to "data_out6"
+    Warning (275081): Converted element name(s) from "data_out[0]" to "data_out0"
+    Warning (275081): Converted element name(s) from "data_out[4]" to "data_out4"
+Error (275036): Node line contains "data_out2" and "data_out1", but may be named only once
+Error (12152): Can't elaborate user hierarchy "rx:inst5"
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 19 warnings
+    Error: Peak virtual memory: 4802 megabytes
+    Error: Processing ended: Wed Jun 10 03:48:41 2026
+    Error: Elapsed time: 00:00:09
+    Error: Total CPU time (on all processors): 00:00:14
 
 
