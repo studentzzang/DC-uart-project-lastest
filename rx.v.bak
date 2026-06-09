@@ -30,7 +30,7 @@ input wire	rx_serial;
 input wire	clk;
 input wire	reset;
 input wire	baud_tick;
-output wire	[3:0] data_out;
+output wire	[7:0] data_out;
 output wire	[2:0] rx_cnt;
 
 reg	[7:0] data_out_ALTERA_SYNTHESIZED;
