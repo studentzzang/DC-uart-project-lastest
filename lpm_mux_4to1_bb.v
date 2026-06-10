@@ -36,6 +36,10 @@ module lpm_mux_4to1 (
 	data1,
 	data2,
 	data3,
+	data4,
+	data5,
+	data6,
+	data7,
 	sel,
 	result);
 
@@ -43,7 +47,11 @@ module lpm_mux_4to1 (
 	input	  data1;
 	input	  data2;
 	input	  data3;
-	input	[1:0]  sel;
+	input	  data4;
+	input	  data5;
+	input	  data6;
+	input	  data7;
+	input	[2:0]  sel;
 	output	  result;
 
 endmodule
@@ -55,21 +63,29 @@ endmodule
 // Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
 // Retrieval info: PRIVATE: new_diagram STRING "1"
 // Retrieval info: LIBRARY: lpm lpm.lpm_components.all
-// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "4"
+// Retrieval info: CONSTANT: LPM_SIZE NUMERIC "8"
 // Retrieval info: CONSTANT: LPM_TYPE STRING "LPM_MUX"
 // Retrieval info: CONSTANT: LPM_WIDTH NUMERIC "1"
-// Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "2"
+// Retrieval info: CONSTANT: LPM_WIDTHS NUMERIC "3"
 // Retrieval info: USED_PORT: data0 0 0 0 0 INPUT NODEFVAL "data0"
 // Retrieval info: USED_PORT: data1 0 0 0 0 INPUT NODEFVAL "data1"
 // Retrieval info: USED_PORT: data2 0 0 0 0 INPUT NODEFVAL "data2"
 // Retrieval info: USED_PORT: data3 0 0 0 0 INPUT NODEFVAL "data3"
+// Retrieval info: USED_PORT: data4 0 0 0 0 INPUT NODEFVAL "data4"
+// Retrieval info: USED_PORT: data5 0 0 0 0 INPUT NODEFVAL "data5"
+// Retrieval info: USED_PORT: data6 0 0 0 0 INPUT NODEFVAL "data6"
+// Retrieval info: USED_PORT: data7 0 0 0 0 INPUT NODEFVAL "data7"
 // Retrieval info: USED_PORT: result 0 0 0 0 OUTPUT NODEFVAL "result"
-// Retrieval info: USED_PORT: sel 0 0 2 0 INPUT NODEFVAL "sel[1..0]"
+// Retrieval info: USED_PORT: sel 0 0 3 0 INPUT NODEFVAL "sel[2..0]"
 // Retrieval info: CONNECT: @data 0 0 1 0 data0 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 1 data1 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 2 data2 0 0 0 0
 // Retrieval info: CONNECT: @data 0 0 1 3 data3 0 0 0 0
-// Retrieval info: CONNECT: @sel 0 0 2 0 sel 0 0 2 0
+// Retrieval info: CONNECT: @data 0 0 1 4 data4 0 0 0 0
+// Retrieval info: CONNECT: @data 0 0 1 5 data5 0 0 0 0
+// Retrieval info: CONNECT: @data 0 0 1 6 data6 0 0 0 0
+// Retrieval info: CONNECT: @data 0 0 1 7 data7 0 0 0 0
+// Retrieval info: CONNECT: @sel 0 0 3 0 sel 0 0 3 0
 // Retrieval info: CONNECT: result 0 0 0 0 @result 0 0 1 0
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux_4to1.v TRUE
 // Retrieval info: GEN_FILE: TYPE_NORMAL lpm_mux_4to1.inc FALSE
