@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/Projects/dc-UART/simulation/qsim
 vtop
-Z1 !s110 1781110400
+Z1 !s110 1781111390
 !i10b 1
-!s100 :2[C6AMWH9@D3WP0DYk6^3
-IUYMc^_<531NELE^0TIbFm1
+!s100 [TJCBVEAzA>CPV08lNk7i2
+IeOz9ZeTPIDi0IT_7l?2zP0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 Z3 dC:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim
-w1781110399
+w1781111389
 Z4 8uart.vo
 Z5 Fuart.vo
 Z6 L0 31
@@ -23,35 +23,35 @@ Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1781110399.000000
-Z8 !s107 uart.vo|
-Z9 !s90 -work|work|uart.vo|
+Z8 !s108 1781111390.000000
+Z9 !s107 uart.vo|
+Z10 !s90 -work|work|uart.vo|
 !i113 1
-Z10 o-work work
-Z11 tCvgOpt 0
+Z11 o-work work
+Z12 tCvgOpt 0
 vtop_vlg_vec_tst
 R1
 !i10b 1
-!s100 =jV745m5[DDc:WX0ol06F3
-I77_9Uh@97U43N?;DVbOmB3
+!s100 :od<b_XC0;UdQLPHUFW8g2
+I^Q?cF0om@^mJziKo743E40
 R2
 R3
-w1781110397
-8Waveform3.vwf.vt
-FWaveform3.vwf.vt
-Z12 L0 29
+w1781111387
+8Waveform5.vwf.vt
+FWaveform5.vwf.vt
+Z13 L0 29
 R7
 r1
 !s85 0
 31
-!s108 1781110400.000000
-!s107 Waveform3.vwf.vt|
-!s90 -work|work|Waveform3.vwf.vt|
+R8
+!s107 Waveform5.vwf.vt|
+!s90 -work|work|Waveform5.vwf.vt|
 !i113 1
-R10
 R11
+R12
 vtx
-Z13 !s110 1779898981
+Z14 !s110 1779898981
 !i10b 1
 !s100 aJ2YF4:08gdh4LoO5;8l>0
 Ik9cLB0C>T99KhO]lD2I8?1
@@ -65,35 +65,35 @@ R7
 r1
 !s85 0
 31
-Z14 !s108 1779898981.000000
-R8
+Z15 !s108 1779898981.000000
 R9
-!i113 1
 R10
+!i113 1
 R11
+R12
 vtx_vlg_vec_tst
-R13
+R14
 !i10b 1
 !s100 7Ueg_YG0`I2WlfTd]N3Qz0
 I0@fEVj0MAW@EQlNVZ=3>N3
 R2
 R0
 w1779898975
-Z15 8Waveform.vwf.vt
-Z16 FWaveform.vwf.vt
-R12
+Z16 8Waveform.vwf.vt
+Z17 FWaveform.vwf.vt
+R13
 R7
 r1
 !s85 0
 31
-R14
-Z17 !s107 Waveform.vwf.vt|
-Z18 !s90 -work|work|Waveform.vwf.vt|
+R15
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R10
 R11
+R12
 vuart
-Z19 !s110 1780285940
+Z20 !s110 1780285940
 !i10b 1
 !s100 UCnVz1BSD4`=fP<a1SB323
 IB^@6<iT:J19S6j1Jf0h9T3
@@ -108,29 +108,29 @@ r1
 !s85 0
 31
 !s108 1780285939.000000
-R8
 R9
-!i113 1
 R10
+!i113 1
 R11
+R12
 vuart_vlg_vec_tst
-R19
+R20
 !i10b 1
 !s100 1j7LdDoVRI2=3j1hXAD>G0
 IZToQCj8U4J^n^2XPCCzFX2
 R2
 R0
 w1780285932
-R15
 R16
-R12
+R17
+R13
 R7
 r1
 !s85 0
 31
 !s108 1780285940.000000
-R17
 R18
+R19
 !i113 1
-R10
 R11
+R12

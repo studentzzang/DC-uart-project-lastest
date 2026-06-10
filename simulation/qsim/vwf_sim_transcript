@@ -7,7 +7,7 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform3.vwf" --testbench_file="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform3.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform5.vwf" --testbench_file="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform5.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
@@ -25,8 +25,8 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jun 11 01:53:15 2026
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source=C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform3.vwf --testbench_file=C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform3.vwf.vt
+    Info: Processing started: Thu Jun 11 02:09:46 2026
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source=C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform5.vwf --testbench_file=C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform5.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
 Completed successfully. 
@@ -53,14 +53,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jun 11 01:53:17 2026
+    Info: Processing started: Thu Jun 11 02:09:48 2026
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/ uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file uart.vo in folder "C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 4732 megabytes
-    Info: Processing ended: Thu Jun 11 01:53:19 2026
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Thu Jun 11 02:09:49 2026
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:02
 
 Completed successfully. 
@@ -83,28 +83,28 @@ Reading D:/DownLoad_files/modelsim_ase/tcl/vsim/pref.tcl
 
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:53:19 on Jun 11,2026
+# Start time: 02:09:50 on Jun 11,2026
 # vlog -work work uart.vo 
 # -- Compiling module top
 
 # 
 # Top level modules:
 # 	top
-# End time: 01:53:20 on Jun 11,2026, Elapsed time: 0:00:01
+# End time: 02:09:50 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:53:20 on Jun 11,2026
-# vlog -work work Waveform3.vwf.vt 
-
+# Start time: 02:09:50 on Jun 11,2026
+# vlog -work work Waveform5.vwf.vt 
 # -- Compiling module top_vlg_vec_tst
+
 # 
 # Top level modules:
 # 	top_vlg_vec_tst
-# End time: 01:53:20 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 02:09:50 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_vlg_vec_tst 
-# Start time: 01:53:20 on Jun 11,2026
+# Start time: 02:09:50 on Jun 11,2026
 # Loading work.top_vlg_vec_tst
 # Loading work.top
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -114,22 +114,22 @@ Reading D:/DownLoad_files/modelsim_ase/tcl/vsim/pref.tcl
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Note: $finish    : Waveform3.vwf.vt(64)
+# ** Note: $finish    : Waveform5.vwf.vt(64)
 #    Time: 3 us  Iteration: 0  Instance: /top_vlg_vec_tst
-# End time: 01:53:20 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 02:09:51 on Jun 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform3.vwf...
+Reading C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform5.vwf...
 
 Reading C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/uart.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/uart_20260611015320.sim.vwf
+Writing the resulting VWF to C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/uart_20260611020951.sim.vwf
 
 Finished VCD to VWF conversion.
 

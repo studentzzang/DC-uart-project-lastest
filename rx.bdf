@@ -88,7 +88,7 @@ refer to the applicable agreement for further details.
 	(input)
 	(rect 1472 376 1640 392)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "zero" (rect 5 0 26 12)(font "Arial" ))
+	(text "zero" (rect 5 0 25 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -1919,6 +1919,31 @@ refer to the applicable agreement for further details.
 		(rectangle (rect 16 16 136 160))
 	)
 )
+(symbol
+	(rect 144 192 192 224)
+	(text "NOT" (rect 1 0 21 10)(font "Arial" (font_size 6)))
+	(text "inst1" (rect 3 21 25 38)(font "Intel Clear" ))
+	(port
+		(pt 0 16)
+		(input)
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(text "IN" (rect 2 7 13 19)(font "Courier New" (bold))(invisible))
+		(line (pt 0 16)(pt 13 16))
+	)
+	(port
+		(pt 48 16)
+		(output)
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(text "OUT" (rect 32 7 49 19)(font "Courier New" (bold))(invisible))
+		(line (pt 39 16)(pt 48 16))
+	)
+	(drawing
+		(line (pt 13 25)(pt 13 7))
+		(line (pt 13 7)(pt 31 16))
+		(line (pt 13 25)(pt 31 16))
+		(circle (rect 31 12 39 20))
+	)
+)
 (connector
 	(text "state[0]" (rect 208 64 244 81)(font "Intel Clear" ))
 	(pt 200 80)
@@ -2223,11 +2248,6 @@ refer to the applicable agreement for further details.
 	(text "q[1]" (rect 216 184 234 201)(font "Intel Clear" ))
 	(pt 248 200)
 	(pt 208 200)
-)
-(connector
-	(text "q[0]" (rect 216 192 234 209)(font "Intel Clear" ))
-	(pt 248 208)
-	(pt 208 208)
 )
 (connector
 	(pt 392 280)
@@ -2924,6 +2944,15 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1880 280)
 	(pt 1872 280)
+)
+(connector
+	(pt 192 208)
+	(pt 248 208)
+)
+(connector
+	(text "q[0]" (rect 120 192 138 209)(font "Intel Clear" ))
+	(pt 144 208)
+	(pt 112 208)
 )
 (junction (pt 128 40))
 (junction (pt 984 8))
