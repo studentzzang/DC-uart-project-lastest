@@ -40,8 +40,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 0 64)
 		(input)
-		(text "data_in[7..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
-		(text "data_in[7..0]" (rect 21 59 96 78)(font "Intel Clear" (font_size 8)))
+		(text "data_in[3..0]" (rect 0 0 75 19)(font "Intel Clear" (font_size 8)))
+		(text "data_in[3..0]" (rect 21 59 96 78)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
@@ -61,8 +61,8 @@ refer to the applicable agreement for further details.
 	(port
 		(pt 192 32)
 		(output)
-		(text "tx_cnt[2..0]" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
-		(text "tx_cnt[2..0]" (rect 105 27 171 46)(font "Intel Clear" (font_size 8)))
+		(text "tx_cnt[1..0]" (rect 0 0 66 19)(font "Intel Clear" (font_size 8)))
+		(text "tx_cnt[1..0]" (rect 105 27 171 46)(font "Intel Clear" (font_size 8)))
 		(line (pt 192 32)(pt 176 32)(line_width 3))
 	)
 	(port

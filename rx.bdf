@@ -1960,11 +1960,6 @@ refer to the applicable agreement for further details.
 	(pt 56 48)
 )
 (connector
-	(pt 544 96)
-	(pt 600 96)
-	(bus)
-)
-(connector
 	(pt 1000 8)
 	(pt 984 8)
 )
@@ -2756,22 +2751,6 @@ refer to the applicable agreement for further details.
 	(pt 448 96)
 )
 (connector
-	(pt 544 32)
-	(pt 512 32)
-	(bus)
-)
-(connector
-	(text "q[2..0]" (rect 520 -17 537 12)(font "Intel Clear" )(vertical))
-	(pt 544 8)
-	(pt 544 32)
-	(bus)
-)
-(connector
-	(pt 544 32)
-	(pt 544 96)
-	(bus)
-)
-(connector
 	(pt 1088 112)
 	(pt 1088 256)
 )
@@ -2928,6 +2907,33 @@ refer to the applicable agreement for further details.
 	(pt 320 64)
 	(pt 368 64)
 )
+(connector
+	(pt 600 96)
+	(pt 544 96)
+	(bus)
+)
+(connector
+	(pt 512 32)
+	(pt 544 32)
+	(bus)
+)
+(connector
+	(pt 544 32)
+	(pt 544 96)
+	(bus)
+)
+(connector
+	(text "q[2..0]" (rect 520 -9 537 20)(font "Intel Clear" )(vertical))
+	(pt 544 8)
+	(pt 544 32)
+	(bus)
+)
+(connector
+	(text "q[2..0]" (rect 576 -40 605 -23)(font "Intel Clear" ))
+	(pt 616 -24)
+	(pt 568 -24)
+	(bus)
+)
 (junction (pt 128 40))
 (junction (pt 984 8))
 (junction (pt 984 96))
@@ -2963,5 +2969,5 @@ refer to the applicable agreement for further details.
 (junction (pt 1304 200))
 (junction (pt 808 272))
 (junction (pt 792 264))
-(junction (pt 544 32))
 (junction (pt 208 152))
+(junction (pt 544 32))
