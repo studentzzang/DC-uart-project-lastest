@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Wed Jun 10 16:20:02 2026
+Wed Jun 10 16:46:38 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Jun 10 16:20:02 2026           ;
+; Analysis & Synthesis Status ; Failed - Wed Jun 10 16:46:38 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; uart                                        ;
 ; Top-level Entity Name       ; rx                                          ;
@@ -222,7 +222,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 16:19:48 2026
+    Info: Processing started: Wed Jun 10 16:46:27 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -238,14 +238,9 @@ Info (12127): Elaborating entity "rx" for the top level hierarchy
 Warning (275011): Block or symbol "rx_fsm" of instance "inst" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
 Warning (275011): Block or symbol "AND3" of instance "AND1" overlaps another block or symbol
-Warning (275089): Not all bits in bus "data_out[6..0]" are used
-Warning (275080): Converted elements in bus name "data_out" using legacy naming rules. Make any assignments on the new names, not on the original names.
-    Warning (275081): Converted element name(s) from "data_out[2]" to "data_out2"
-    Warning (275081): Converted element name(s) from "data_out[3]" to "data_out3"
-    Warning (275081): Converted element name(s) from "data_out[1]" to "data_out1"
-    Warning (275081): Converted element name(s) from "data_out[6]" to "data_out6"
-    Warning (275081): Converted element name(s) from "data_out[0]" to "data_out0"
-    Warning (275081): Converted element name(s) from "data_out[4]" to "data_out4"
+Warning (275011): Block or symbol "XOR" of instance "inst19" overlaps another block or symbol
+Warning (275011): Block or symbol "XOR" of instance "inst21" overlaps another block or symbol
+Warning (275011): Block or symbol "XOR" of instance "inst36" overlaps another block or symbol
 Warning (275043): Pin "rx_cnt[2..0]" is missing source
 Warning (275008): Primitive "AND2" of instance "inst22" not used
 Warning (275008): Primitive "DFFE" of instance "inst23" not used
@@ -284,16 +279,16 @@ Warning (12125): Using design file rx_fsm.v, which is not specified as a design 
 Info (12128): Elaborating entity "rx_fsm" for hierarchy "rx_fsm:inst"
 Info (12128): Elaborating entity "74138" for hierarchy "74138:inst5"
 Info (12130): Elaborated megafunction instantiation "74138:inst5"
-Info (12128): Elaborating entity "xor4" for hierarchy "xor4:inst1"
-Info (12130): Elaborated megafunction instantiation "xor4:inst1"
-Error (12002): Port "OUT1" does not exist in macrofunction "inst4"
-Error (12002): Port "OUT1" does not exist in macrofunction "inst3"
-Error (12002): Port "OUT1" does not exist in macrofunction "inst1"
-Error (12002): Port "cout" does not exist in macrofunction "inst26"
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 19 warnings
-    Error: Peak virtual memory: 4796 megabytes
-    Error: Processing ended: Wed Jun 10 16:20:02 2026
-    Error: Elapsed time: 00:00:14
-    Error: Total CPU time (on all processors): 00:00:26
+Error (12014): Net "gdfx_temp0", which fans out to "inst31", cannot be assigned more than one value
+    Error (12015): Net is fed by "rx_serial"
+    Error (12015): Net is fed by "reset"
+    Error (12015): Net is fed by "inst2"
+    Error (12015): Net is fed by "clk"
+    Error (12015): Net is fed by "rx_fsm:inst|clear_bit_index" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/rx_fsm.v Line: 36
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 14 warnings
+    Error: Peak virtual memory: 4792 megabytes
+    Error: Processing ended: Wed Jun 10 16:46:38 2026
+    Error: Elapsed time: 00:00:11
+    Error: Total CPU time (on all processors): 00:00:20
 
 
