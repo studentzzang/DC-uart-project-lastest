@@ -1,25 +1,25 @@
 # do uart.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:09:50 on Jun 11,2026
+# Start time: 02:31:45 on Jun 11,2026
 # vlog -work work uart.vo 
 # -- Compiling module top
 # 
 # Top level modules:
 # 	top
-# End time: 02:09:50 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 02:31:45 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:09:50 on Jun 11,2026
-# vlog -work work Waveform5.vwf.vt 
+# Start time: 02:31:45 on Jun 11,2026
+# vlog -work work Waveform6.vwf.vt 
 # -- Compiling module top_vlg_vec_tst
 # 
 # Top level modules:
 # 	top_vlg_vec_tst
-# End time: 02:09:50 on Jun 11,2026, Elapsed time: 0:00:00
+# End time: 02:31:45 on Jun 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_vlg_vec_tst 
-# Start time: 02:09:50 on Jun 11,2026
+# Start time: 02:31:45 on Jun 11,2026
 # Loading work.top_vlg_vec_tst
 # Loading work.top
 # Loading cyclonev_ver.cyclonev_io_obuf
@@ -29,7 +29,7 @@
 # Loading altera_ver.dffeas
 # Loading altera_ver.PRIM_GDFF_LOW
 # after#25
-# ** Note: $finish    : Waveform5.vwf.vt(64)
-#    Time: 3 us  Iteration: 0  Instance: /top_vlg_vec_tst
-# End time: 02:09:51 on Jun 11,2026, Elapsed time: 0:00:01
+# ** Note: $finish    : Waveform6.vwf.vt(66)
+#    Time: 1 us  Iteration: 0  Instance: /top_vlg_vec_tst
+# End time: 02:31:46 on Jun 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0

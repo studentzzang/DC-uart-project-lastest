@@ -1,5 +1,5 @@
 EDA Netlist Writer report for uart
-Thu Jun 11 02:09:49 2026
+Thu Jun 11 02:31:43 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Jun 11 02:09:49 2026 ;
+; EDA Netlist Writer Status ; Successful - Thu Jun 11 02:31:43 2026 ;
 ; Revision Name             ; uart                                  ;
 ; Top-level Entity Name     ; top                                   ;
 ; Family                    ; Cyclone V                             ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-------------------------------------------------------------------------+
-; Simulation Generated Files                                              ;
-+-------------------------------------------------------------------------+
-; Generated Files                                                         ;
-+-------------------------------------------------------------------------+
-; C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim//uart.vo ;
-+-------------------------------------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                           ;
++--------------------------------------------------------------------------------------+
+; Generated Files                                                                      ;
++--------------------------------------------------------------------------------------+
+; C:/github/digitalsystem_teamproject/DC-uart-project-lastest/simulation/qsim//uart.vo ;
++--------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Jun 11 02:09:48 2026
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/ uart -c uart
+    Info: Processing started: Thu Jun 11 02:31:38 2026
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/github/digitalsystem_teamproject/DC-uart-project-lastest/simulation/qsim/ uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file uart.vo in folder "C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file uart.vo in folder "C:/github/digitalsystem_teamproject/DC-uart-project-lastest/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4732 megabytes
-    Info: Processing ended: Thu Jun 11 02:09:49 2026
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Peak virtual memory: 4739 megabytes
+    Info: Processing ended: Thu Jun 11 02:31:43 2026
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

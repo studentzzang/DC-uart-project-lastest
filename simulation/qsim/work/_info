@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dD:/Projects/dc-UART/simulation/qsim
 vtop
-Z1 !s110 1781111390
+Z1 !s110 1781112705
 !i10b 1
-!s100 [TJCBVEAzA>CPV08lNk7i2
-IeOz9ZeTPIDi0IT_7l?2zP0
+!s100 @RMHEZ;2H7cGJ2[EgPRRJ2
+IOWO^z@DAk2aAnlCeOee?^1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-Z3 dC:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim
-w1781111389
+Z3 dC:/github/digitalsystem_teamproject/DC-uart-project-lastest/simulation/qsim
+w1781112703
 Z4 8uart.vo
 Z5 Fuart.vo
 Z6 L0 31
@@ -23,7 +23,7 @@ Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z8 !s108 1781111390.000000
+Z8 !s108 1781112705.000000
 Z9 !s107 uart.vo|
 Z10 !s90 -work|work|uart.vo|
 !i113 1
@@ -32,21 +32,21 @@ Z12 tCvgOpt 0
 vtop_vlg_vec_tst
 R1
 !i10b 1
-!s100 :od<b_XC0;UdQLPHUFW8g2
-I^Q?cF0om@^mJziKo743E40
+!s100 gJJGU2XQoS<f2d2:RogDe0
+IJ21kk7QoIh_`O][;ZjOOb1
 R2
 R3
-w1781111387
-8Waveform5.vwf.vt
-FWaveform5.vwf.vt
+w1781112697
+8Waveform6.vwf.vt
+FWaveform6.vwf.vt
 Z13 L0 29
 R7
 r1
 !s85 0
 31
 R8
-!s107 Waveform5.vwf.vt|
-!s90 -work|work|Waveform5.vwf.vt|
+!s107 Waveform6.vwf.vt|
+!s90 -work|work|Waveform6.vwf.vt|
 !i113 1
 R11
 R12

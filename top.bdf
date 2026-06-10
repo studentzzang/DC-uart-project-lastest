@@ -211,6 +211,22 @@ refer to the applicable agreement for further details.
 		(line (pt 78 12)(pt 82 8))
 	)
 )
+(pin
+	(output)
+	(rect 1296 472 1472 488)
+	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
+	(text "rx_noisedata" (rect 90 0 152 12)(font "Arial" ))
+	(pt 0 8)
+	(drawing
+		(line (pt 0 8)(pt 52 8))
+		(line (pt 52 4)(pt 78 4))
+		(line (pt 52 12)(pt 78 12))
+		(line (pt 52 12)(pt 52 4))
+		(line (pt 78 4)(pt 82 8))
+		(line (pt 82 8)(pt 78 12))
+		(line (pt 78 12)(pt 82 8))
+	)
+)
 (symbol
 	(rect 648 304 792 400)
 	(text "baud_gen_" (rect 5 0 71 19)(font "Intel Clear" (font_size 8)))
@@ -540,10 +556,6 @@ refer to the applicable agreement for further details.
 	(pt 960 488)
 )
 (connector
-	(pt 1184 480)
-	(pt 1040 480)
-)
-(connector
 	(pt 1152 440)
 	(pt 1152 344)
 )
@@ -660,6 +672,14 @@ refer to the applicable agreement for further details.
 	(pt 1184 536)
 	(pt 1224 536)
 )
+(connector
+	(pt 1040 480)
+	(pt 1184 480)
+)
+(connector
+	(pt 1184 480)
+	(pt 1296 480)
+)
 (junction (pt 928 400))
 (junction (pt 872 288))
 (junction (pt 632 352))
@@ -667,3 +687,4 @@ refer to the applicable agreement for further details.
 (junction (pt 800 336))
 (junction (pt 800 392))
 (junction (pt 1184 288))
+(junction (pt 1184 480))
