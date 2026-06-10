@@ -8,11 +8,23 @@
 					"strict" : false
 				},
 				{
-					"name" : "tx_sel[1]",
+					"name" : "baud_tick",
 					"strict" : false
 				},
 				{
-					"name" : "tx_sel[0]",
+					"name" : "data_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[0]",
 					"strict" : false
 				},
 				{
@@ -24,15 +36,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "tx_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_sel[0]",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
-					"name" : "baud_tick",
-					"strict" : false
-				},
-				{
-					"name" : "clk",
+					"name" : "0",
 					"strict" : false
 				},
 				{
@@ -52,7 +68,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
 					"name" : "data_ready",
+					"strict" : false
+				},
+				{
+					"name" : "noise",
 					"strict" : false
 				}
 			]
