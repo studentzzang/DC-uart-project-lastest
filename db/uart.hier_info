@@ -101,15 +101,15 @@ q[2] <= lpm_counter:LPM_COUNTER_component.q
 
 
 |rx|lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component
-clock => cntr_83j:auto_generated.clock
+clock => cntr_ddk:auto_generated.clock
 clk_en => ~NO_FANOUT~
-cnt_en => cntr_83j:auto_generated.cnt_en
+cnt_en => cntr_ddk:auto_generated.cnt_en
 updown => ~NO_FANOUT~
-aclr => cntr_83j:auto_generated.aclr
+aclr => cntr_ddk:auto_generated.aclr
 aset => ~NO_FANOUT~
 aconst => ~NO_FANOUT~
 aload => ~NO_FANOUT~
-sclr => cntr_83j:auto_generated.sclr
+sclr => cntr_ddk:auto_generated.sclr
 sset => ~NO_FANOUT~
 sconst => ~NO_FANOUT~
 sload => ~NO_FANOUT~
@@ -117,9 +117,9 @@ data[0] => ~NO_FANOUT~
 data[1] => ~NO_FANOUT~
 data[2] => ~NO_FANOUT~
 cin => ~NO_FANOUT~
-q[0] <= cntr_83j:auto_generated.q[0]
-q[1] <= cntr_83j:auto_generated.q[1]
-q[2] <= cntr_83j:auto_generated.q[2]
+q[0] <= cntr_ddk:auto_generated.q[0]
+q[1] <= cntr_ddk:auto_generated.q[1]
+q[2] <= cntr_ddk:auto_generated.q[2]
 cout <= <GND>
 eq[0] <= <GND>
 eq[1] <= <GND>
@@ -139,7 +139,7 @@ eq[14] <= <GND>
 eq[15] <= <GND>
 
 
-|rx|lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_83j:auto_generated
+|rx|lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated
 aclr => counter_reg_bit[2].IN0
 clock => counter_reg_bit[2].CLK
 clock => counter_reg_bit[1].CLK
@@ -152,6 +152,16 @@ sclr => _.IN1
 sclr => counter_reg_bit[2].SCLR
 sclr => counter_reg_bit[1].SCLR
 sclr => counter_reg_bit[0].SCLR
+
+
+|rx|lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated|cmpr_b9c:cmpr1
+aeb <= aeb_result_wire[0].DB_MAX_OUTPUT_PORT_TYPE
+dataa[0] => data_wire[0].IN0
+dataa[1] => data_wire[0].IN0
+dataa[2] => data_wire[1].IN0
+datab[0] => data_wire[0].IN1
+datab[1] => data_wire[0].IN1
+datab[2] => data_wire[1].IN1
 
 
 |rx|rx_fsm:inst
@@ -194,7 +204,7 @@ Y1N <= 16.DB_MAX_OUTPUT_PORT_TYPE
 Y0N <= 15.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|rx|XOR4:inst1
+|rx|xor4:inst1
 OUT <= 3.DB_MAX_OUTPUT_PORT_TYPE
 IN1 => 13.IN0
 IN2 => 13.IN1
@@ -202,7 +212,7 @@ IN3 => 16.IN0
 IN4 => 16.IN1
 
 
-|rx|XOR4:inst3
+|rx|xor4:inst3
 OUT <= 3.DB_MAX_OUTPUT_PORT_TYPE
 IN1 => 13.IN0
 IN2 => 13.IN1
@@ -210,7 +220,7 @@ IN3 => 16.IN0
 IN4 => 16.IN1
 
 
-|rx|XOR4:inst4
+|rx|xor4:inst4
 OUT <= 3.DB_MAX_OUTPUT_PORT_TYPE
 IN1 => 13.IN0
 IN2 => 13.IN1

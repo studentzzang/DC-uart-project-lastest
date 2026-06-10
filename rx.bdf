@@ -981,7 +981,7 @@ refer to the applicable agreement for further details.
 	)
 )
 (symbol
-	(rect 1504 32 1608 128)
+	(rect 1512 32 1616 128)
 	(text "XOR4" (rect 34 -1 71 15)(font "Courier New" (font_size 10)(bold)))
 	(text "inst1" (rect 3 85 25 102)(font "Intel Clear" ))
 	(port
@@ -2403,41 +2403,8 @@ refer to the applicable agreement for further details.
 	(pt 1304 200)
 )
 (connector
-	(pt 1280 88)
-	(pt 1504 88)
-)
-(connector
-	(pt 1280 0)
-	(pt 1280 88)
-)
-(connector
-	(pt 1280 104)
-	(pt 1504 104)
-)
-(connector
-	(text "data_out[4]" (rect 1224 -16 1279 1)(font "Intel Clear" ))
-	(pt 1216 0)
-	(pt 1280 0)
-)
-(connector
-	(pt 1280 104)
-	(pt 1280 200)
-)
-(connector
-	(pt 1280 200)
-	(pt 1280 216)
-)
-(connector
-	(pt 1280 0)
-	(pt 1288 0)
-)
-(connector
 	(pt 1640 384)
 	(pt 1672 384)
-)
-(connector
-	(pt 1608 88)
-	(pt 1616 88)
 )
 (connector
 	(pt 1624 304)
@@ -2466,10 +2433,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1616 184)
 	(pt 1720 184)
-)
-(connector
-	(pt 1616 88)
-	(pt 1616 184)
 )
 (connector
 	(pt 1648 304)
@@ -2522,10 +2485,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 1856 280)
 	(pt 1856 288)
-)
-(connector
-	(pt 1504 56)
-	(pt 1392 56)
 )
 (connector
 	(pt 1064 8)
@@ -2593,20 +2552,8 @@ refer to the applicable agreement for further details.
 	(pt 1304 0)
 )
 (connector
-	(pt 1392 -40)
-	(pt 1392 56)
-)
-(connector
 	(pt 1992 -32)
 	(pt 1424 -32)
-)
-(connector
-	(pt 1424 72)
-	(pt 1504 72)
-)
-(connector
-	(pt 1424 -32)
-	(pt 1424 72)
 )
 (connector
 	(pt 1512 184)
@@ -2614,10 +2561,6 @@ refer to the applicable agreement for further details.
 )
 (connector
 	(pt 1072 160)
-	(pt 1424 160)
-)
-(connector
-	(pt 1424 72)
 	(pt 1424 160)
 )
 (connector
@@ -2735,6 +2678,59 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 792 264)
 	(pt 792 304)
+)
+(connector
+	(pt 1280 0)
+	(pt 1280 88)
+)
+(connector
+	(pt 1616 184)
+	(pt 1616 88)
+)
+(connector
+	(pt 1392 -40)
+	(pt 1392 56)
+)
+(connector
+	(text "data_out[4]" (rect 1224 -16 1279 1)(font "Intel Clear" ))
+	(pt 1216 0)
+	(pt 1280 0)
+)
+(connector
+	(pt 1280 0)
+	(pt 1288 0)
+)
+(connector
+	(pt 1280 104)
+	(pt 1280 200)
+)
+(connector
+	(pt 1280 200)
+	(pt 1280 216)
+)
+(connector
+	(pt 1424 -32)
+	(pt 1424 72)
+)
+(connector
+	(pt 1424 72)
+	(pt 1424 160)
+)
+(connector
+	(pt 1280 88)
+	(pt 1512 88)
+)
+(connector
+	(pt 1280 104)
+	(pt 1512 104)
+)
+(connector
+	(pt 1424 72)
+	(pt 1512 72)
+)
+(connector
+	(pt 1392 56)
+	(pt 1512 56)
 )
 (junction (pt 128 40))
 (junction (pt 984 8))

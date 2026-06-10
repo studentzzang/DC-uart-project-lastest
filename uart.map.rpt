@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Wed Jun 10 04:18:01 2026
+Wed Jun 10 16:20:02 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Jun 10 04:18:01 2026           ;
+; Analysis & Synthesis Status ; Failed - Wed Jun 10 16:20:02 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; uart                                        ;
 ; Top-level Entity Name       ; rx                                          ;
@@ -187,7 +187,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; IGNORE_CASCADE_BUFFERS ; OFF         ; IGNORE_CASCADE                                               ;
 ; LPM_WIDTH              ; 3           ; Signed Integer                                               ;
 ; LPM_DIRECTION          ; UP          ; Untyped                                                      ;
-; LPM_MODULUS            ; 0           ; Untyped                                                      ;
+; LPM_MODULUS            ; 7           ; Signed Integer                                               ;
 ; LPM_AVALUE             ; UNUSED      ; Untyped                                                      ;
 ; LPM_SVALUE             ; UNUSED      ; Untyped                                                      ;
 ; LPM_PORT_UPDOWN        ; PORT_UNUSED ; Untyped                                                      ;
@@ -198,7 +198,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; CARRY_CNT_EN           ; SMART       ; Untyped                                                      ;
 ; LABWIDE_SCLR           ; ON          ; Untyped                                                      ;
 ; USE_NEW_VERSION        ; TRUE        ; Untyped                                                      ;
-; CBXI_PARAMETER         ; cntr_83j    ; Untyped                                                      ;
+; CBXI_PARAMETER         ; cntr_ddk    ; Untyped                                                      ;
 +------------------------+-------------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
@@ -222,7 +222,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 04:17:48 2026
+    Info: Processing started: Wed Jun 10 16:19:48 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -244,8 +244,8 @@ Warning (275080): Converted elements in bus name "data_out" using legacy naming 
     Warning (275081): Converted element name(s) from "data_out[3]" to "data_out3"
     Warning (275081): Converted element name(s) from "data_out[1]" to "data_out1"
     Warning (275081): Converted element name(s) from "data_out[6]" to "data_out6"
-    Warning (275081): Converted element name(s) from "data_out[4]" to "data_out4"
     Warning (275081): Converted element name(s) from "data_out[0]" to "data_out0"
+    Warning (275081): Converted element name(s) from "data_out[4]" to "data_out4"
 Warning (275043): Pin "rx_cnt[2..0]" is missing source
 Warning (275008): Primitive "AND2" of instance "inst22" not used
 Warning (275008): Primitive "DFFE" of instance "inst23" not used
@@ -269,27 +269,31 @@ Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter_3:inst
 Info (12130): Elaborated megafunction instantiation "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
 Info (12133): Instantiated megafunction "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
     Info (12134): Parameter "lpm_direction" = "UP"
+    Info (12134): Parameter "lpm_modulus" = "7"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "3"
-Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_83j.tdf
-    Info (12023): Found entity 1: cntr_83j File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_83j.tdf Line: 25
-Info (12128): Elaborating entity "cntr_83j" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_83j:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ddk.tdf
+    Info (12023): Found entity 1: cntr_ddk File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_ddk.tdf Line: 27
+Info (12128): Elaborating entity "cntr_ddk" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_b9c.tdf
+    Info (12023): Found entity 1: cmpr_b9c File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cmpr_b9c.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_b9c" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated|cmpr_b9c:cmpr1" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_ddk.tdf Line: 37
 Warning (12125): Using design file rx_fsm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: rx_fsm File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/rx_fsm.v Line: 22
 Info (12128): Elaborating entity "rx_fsm" for hierarchy "rx_fsm:inst"
 Info (12128): Elaborating entity "74138" for hierarchy "74138:inst5"
 Info (12130): Elaborated megafunction instantiation "74138:inst5"
-Info (12128): Elaborating entity "XOR4" for hierarchy "XOR4:inst1"
-Info (12130): Elaborated megafunction instantiation "XOR4:inst1"
+Info (12128): Elaborating entity "xor4" for hierarchy "xor4:inst1"
+Info (12130): Elaborated megafunction instantiation "xor4:inst1"
 Error (12002): Port "OUT1" does not exist in macrofunction "inst4"
 Error (12002): Port "OUT1" does not exist in macrofunction "inst3"
 Error (12002): Port "OUT1" does not exist in macrofunction "inst1"
 Error (12002): Port "cout" does not exist in macrofunction "inst26"
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 4 errors, 19 warnings
-    Error: Peak virtual memory: 4792 megabytes
-    Error: Processing ended: Wed Jun 10 04:18:01 2026
-    Error: Elapsed time: 00:00:13
-    Error: Total CPU time (on all processors): 00:00:24
+    Error: Peak virtual memory: 4796 megabytes
+    Error: Processing ended: Wed Jun 10 16:20:02 2026
+    Error: Elapsed time: 00:00:14
+    Error: Total CPU time (on all processors): 00:00:26
 
 
