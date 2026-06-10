@@ -1,7 +1,14 @@
 
-State Machine - |rx|rx_fsm:inst|fstate
+State Machine - |top|rx:inst3|rx_fsm:inst|fstate
 Name fstate.STOP fstate.DATA fstate.START fstate.IDLE 
 fstate.IDLE 0 0 0 0 
 fstate.START 0 0 1 1 
 fstate.DATA 0 1 0 1 
+fstate.STOP 1 0 0 1 
+
+State Machine - |top|tx:inst2|tx_fsm:inst|fstate
+Name fstate.STOP fstate.START fstate.DATA fstate.IDLE 
+fstate.IDLE 0 0 0 0 
+fstate.DATA 0 0 1 1 
+fstate.START 0 1 0 1 
 fstate.STOP 1 0 0 1 

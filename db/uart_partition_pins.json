@@ -4,27 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "data1",
-					"strict" : false
-				},
-				{
-					"name" : "data2",
-					"strict" : false
-				},
-				{
-					"name" : "data3",
-					"strict" : false
-				},
-				{
-					"name" : "data4",
-					"strict" : false
-				},
-				{
-					"name" : "0",
-					"strict" : false
-				},
-				{
-					"name" : "rx_serial",
+					"name" : "tx_serial",
 					"strict" : false
 				},
 				{
@@ -32,11 +12,91 @@
 					"strict" : false
 				},
 				{
+					"name" : "data_out[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[2]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_out[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_cmt[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_cmt[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_cmt[0]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_sel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tx_sel[0]",
+					"strict" : false
+				},
+				{
 					"name" : "reset",
 					"strict" : false
 				},
 				{
+					"name" : "0",
+					"strict" : false
+				},
+				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "data_ready",
+					"strict" : false
+				},
+				{
+					"name" : "noise",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[5]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[7]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[4]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[6]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[1]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[3]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[0]",
+					"strict" : false
+				},
+				{
+					"name" : "data_in[2]",
 					"strict" : false
 				}
 			]

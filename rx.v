@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Wed Jun 10 16:15:28 2026"
+// CREATED		"Wed Jun 10 19:45:58 2026"
 
 module rx(
 	rx_serial,
@@ -41,17 +41,10 @@ output wire	data3;
 output wire	data4;
 output wire	[2:0] rx_cnt;
 
-reg	data_out0;
-reg	data_out1;
-reg	data_out2;
-reg	data_out3;
-reg	data_out4;
-reg	data_out6;
-wire	gdfx_temp0;
 wire	[2:0] q;
 reg	[1:0] state;
 wire	SYNTHESIZED_WIRE_0;
-wire	SYNTHESIZED_WIRE_38;
+wire	SYNTHESIZED_WIRE_45;
 wire	SYNTHESIZED_WIRE_2;
 wire	SYNTHESIZED_WIRE_4;
 wire	SYNTHESIZED_WIRE_6;
@@ -59,91 +52,104 @@ wire	SYNTHESIZED_WIRE_8;
 wire	SYNTHESIZED_WIRE_10;
 wire	SYNTHESIZED_WIRE_12;
 wire	SYNTHESIZED_WIRE_14;
-reg	SYNTHESIZED_WIRE_39;
+reg	SYNTHESIZED_WIRE_46;
 wire	SYNTHESIZED_WIRE_15;
 wire	SYNTHESIZED_WIRE_16;
 wire	SYNTHESIZED_WIRE_17;
 wire	SYNTHESIZED_WIRE_18;
 wire	SYNTHESIZED_WIRE_19;
-wire	SYNTHESIZED_WIRE_40;
+reg	DFF_inst29;
+reg	SYNTHESIZED_WIRE_47;
+reg	SYNTHESIZED_WIRE_48;
+reg	SYNTHESIZED_WIRE_49;
+reg	DFF_inst30;
+wire	SYNTHESIZED_WIRE_50;
 wire	SYNTHESIZED_WIRE_23;
 wire	SYNTHESIZED_WIRE_24;
 wire	SYNTHESIZED_WIRE_25;
 wire	SYNTHESIZED_WIRE_26;
-wire	SYNTHESIZED_WIRE_41;
+wire	SYNTHESIZED_WIRE_27;
 wire	SYNTHESIZED_WIRE_28;
+wire	SYNTHESIZED_WIRE_29;
 wire	SYNTHESIZED_WIRE_30;
 wire	SYNTHESIZED_WIRE_31;
+reg	DFF_inst32;
 wire	SYNTHESIZED_WIRE_32;
 wire	SYNTHESIZED_WIRE_33;
 wire	SYNTHESIZED_WIRE_34;
 wire	SYNTHESIZED_WIRE_35;
 wire	SYNTHESIZED_WIRE_36;
 wire	SYNTHESIZED_WIRE_37;
+wire	SYNTHESIZED_WIRE_38;
+wire	SYNTHESIZED_WIRE_39;
+wire	SYNTHESIZED_WIRE_40;
+wire	SYNTHESIZED_WIRE_41;
+wire	SYNTHESIZED_WIRE_42;
+wire	SYNTHESIZED_WIRE_43;
+wire	SYNTHESIZED_WIRE_44;
 
 
 
 
-assign	SYNTHESIZED_WIRE_28 = SYNTHESIZED_WIRE_0 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_29 = SYNTHESIZED_WIRE_0 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_2 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_30 = SYNTHESIZED_WIRE_2 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_30 = SYNTHESIZED_WIRE_4 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_31 = SYNTHESIZED_WIRE_4 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_23 = SYNTHESIZED_WIRE_6 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_25 = SYNTHESIZED_WIRE_6 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_24 = SYNTHESIZED_WIRE_8 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_26 = SYNTHESIZED_WIRE_8 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_25 = SYNTHESIZED_WIRE_10 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_27 = SYNTHESIZED_WIRE_10 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_26 = SYNTHESIZED_WIRE_12 & baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_28 = SYNTHESIZED_WIRE_12 & baud_tick & SYNTHESIZED_WIRE_45;
 
 
 rx_fsm	b2v_inst(
-	.reset(gdfx_temp0),
-	.clock(gdfx_temp0),
-	.rx_serial(gdfx_temp0),
+	.reset(reset),
+	.clock(clk),
+	.rx_serial(rx_serial),
 	.bit_index_is_7(SYNTHESIZED_WIRE_14),
 	.baud_tick(baud_tick),
 	
-	.clear_bit_index(gdfx_temp0),
-	.count_en(SYNTHESIZED_WIRE_38));
+	.clear_bit_index(SYNTHESIZED_WIRE_23),
+	.count_en(SYNTHESIZED_WIRE_45));
 	defparam	b2v_inst.DATA = 2;
 	defparam	b2v_inst.IDLE = 0;
 	defparam	b2v_inst.START = 1;
 	defparam	b2v_inst.STOP = 3;
 
+assign	data3 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_15;
 
-xor4_0	b2v_inst1(
-	.IN3(data_out4),
-	.IN4(data_out6),
-	.IN2(data_out2),
-	.IN1(data_out0),
-	.OUT1(SYNTHESIZED_WIRE_31));
+assign	SYNTHESIZED_WIRE_43 =  ~SYNTHESIZED_WIRE_16;
 
-assign	data3 = SYNTHESIZED_WIRE_39 ^ SYNTHESIZED_WIRE_15;
-
-assign	SYNTHESIZED_WIRE_36 =  ~SYNTHESIZED_WIRE_16;
-
-assign	SYNTHESIZED_WIRE_37 =  ~SYNTHESIZED_WIRE_17;
+assign	SYNTHESIZED_WIRE_44 =  ~SYNTHESIZED_WIRE_17;
 
 assign	SYNTHESIZED_WIRE_15 =  ~SYNTHESIZED_WIRE_18;
 
-assign	SYNTHESIZED_WIRE_35 =  ~SYNTHESIZED_WIRE_19;
+assign	SYNTHESIZED_WIRE_42 =  ~SYNTHESIZED_WIRE_19;
 
-assign	gdfx_temp0 = baud_tick & SYNTHESIZED_WIRE_38;
+assign	SYNTHESIZED_WIRE_32 = DFF_inst29 ^ SYNTHESIZED_WIRE_47;
 
-assign	SYNTHESIZED_WIRE_40 = ;
+assign	SYNTHESIZED_WIRE_24 = baud_tick & SYNTHESIZED_WIRE_45;
+
+assign	SYNTHESIZED_WIRE_33 = SYNTHESIZED_WIRE_48 ^ SYNTHESIZED_WIRE_49;
+
+assign	SYNTHESIZED_WIRE_34 = DFF_inst30 ^ SYNTHESIZED_WIRE_47;
+
+assign	SYNTHESIZED_WIRE_50 = ;
 
 
+
+assign	SYNTHESIZED_WIRE_35 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
 
 
 lpm_counter_3	b2v_inst26(
-	.sclr(gdfx_temp0),
-	.clock(gdfx_temp0),
-	.cnt_en(gdfx_temp0),
-	.aclr(gdfx_temp0),
-	
+	.sclr(SYNTHESIZED_WIRE_23),
+	.clock(clk),
+	.cnt_en(SYNTHESIZED_WIRE_24),
+	.aclr(reset),
 	.q(q));
 
 assign	SYNTHESIZED_WIRE_14 = q[2] & q[1] & q[0];
@@ -161,47 +167,26 @@ lpm_decode_3	b2v_inst28(
 	);
 
 
-always@(posedge SYNTHESIZED_WIRE_23)
-begin
-	begin
-	data_out0 <= gdfx_temp0;
-	end
-end
-
-
-xor4_1	b2v_inst3(
-	.IN3(SYNTHESIZED_WIRE_39),
-	.IN4(data_out6),
-	.IN2(data_out2),
-	.IN1(data_out1),
-	.OUT1(SYNTHESIZED_WIRE_32));
-
-
-always@(posedge SYNTHESIZED_WIRE_24)
-begin
-	begin
-	data_out1 <= gdfx_temp0;
-	end
-end
-
-
 always@(posedge SYNTHESIZED_WIRE_25)
 begin
 	begin
-	data_out2 <= gdfx_temp0;
+	DFF_inst29 <= rx_serial;
 	end
 end
 
 
-always@(posedge SYNTHESIZED_WIRE_26 or negedge SYNTHESIZED_WIRE_41)
+always@(posedge SYNTHESIZED_WIRE_26)
 begin
-if (!SYNTHESIZED_WIRE_41)
 	begin
-	data_out3 <= 1;
+	DFF_inst30 <= rx_serial;
 	end
-else
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_27)
+begin
 	begin
-	data_out3 <= gdfx_temp0;
+	SYNTHESIZED_WIRE_47 <= rx_serial;
 	end
 end
 
@@ -209,15 +194,15 @@ end
 always@(posedge SYNTHESIZED_WIRE_28)
 begin
 	begin
-	data_out4 <= gdfx_temp0;
+	DFF_inst32 <= rx_serial;
 	end
 end
 
 
-always@(posedge SYNTHESIZED_WIRE_41)
+always@(posedge SYNTHESIZED_WIRE_29)
 begin
 	begin
-	SYNTHESIZED_WIRE_39 <= gdfx_temp0;
+	SYNTHESIZED_WIRE_48 <= rx_serial;
 	end
 end
 
@@ -225,78 +210,52 @@ end
 always@(posedge SYNTHESIZED_WIRE_30)
 begin
 	begin
-	data_out6 <= gdfx_temp0;
+	SYNTHESIZED_WIRE_46 <= rx_serial;
 	end
 end
 
 
-xor4_2	b2v_inst4(
-	.IN3(SYNTHESIZED_WIRE_39),
-	.IN4(data_out6),
-	.IN2(data_out4),
-	.IN1(data_out3),
-	.OUT1(SYNTHESIZED_WIRE_34));
+always@(posedge SYNTHESIZED_WIRE_31)
+begin
+	begin
+	SYNTHESIZED_WIRE_49 <= rx_serial;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_36 = DFF_inst32 ^ SYNTHESIZED_WIRE_48;
+
+assign	SYNTHESIZED_WIRE_37 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
+
+assign	SYNTHESIZED_WIRE_38 = SYNTHESIZED_WIRE_32 ^ SYNTHESIZED_WIRE_33;
+
+assign	SYNTHESIZED_WIRE_39 = SYNTHESIZED_WIRE_34 ^ SYNTHESIZED_WIRE_35;
+
+assign	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_36 ^ SYNTHESIZED_WIRE_37;
 
 
 \74138 	b2v_inst5(
-	.A(SYNTHESIZED_WIRE_31),
-	.B(SYNTHESIZED_WIRE_32),
-	.G1(SYNTHESIZED_WIRE_33),
-	.C(SYNTHESIZED_WIRE_34),
+	.A(SYNTHESIZED_WIRE_38),
+	.B(SYNTHESIZED_WIRE_39),
+	.G1(SYNTHESIZED_WIRE_40),
+	.C(SYNTHESIZED_WIRE_41),
 	.G2AN(0),
 	.G2BN(0),
 	
 	
+	.Y2N(SYNTHESIZED_WIRE_16),
 	
-	.Y3N(SYNTHESIZED_WIRE_16),
-	
-	.Y5N(SYNTHESIZED_WIRE_17),
-	.Y6N(SYNTHESIZED_WIRE_18),
-	.Y7N(SYNTHESIZED_WIRE_19));
+	.Y4N(SYNTHESIZED_WIRE_17),
+	.Y5N(SYNTHESIZED_WIRE_18),
+	.Y6N(SYNTHESIZED_WIRE_19)
+	);
 
-assign	SYNTHESIZED_WIRE_33 =  ~0;
+assign	SYNTHESIZED_WIRE_40 =  ~0;
 
-assign	data4 = data_out6 ^ SYNTHESIZED_WIRE_35;
+assign	data4 = SYNTHESIZED_WIRE_49 ^ SYNTHESIZED_WIRE_42;
 
-assign	data1 = data_out2 ^ SYNTHESIZED_WIRE_36;
+assign	data1 = SYNTHESIZED_WIRE_47 ^ SYNTHESIZED_WIRE_43;
 
-assign	data2 = data_out4 ^ SYNTHESIZED_WIRE_37;
+assign	data2 = SYNTHESIZED_WIRE_48 ^ SYNTHESIZED_WIRE_44;
 
-assign	gdfx_temp0 = rx_serial;
-assign	gdfx_temp0 = reset;
-assign	gdfx_temp0 = clk;
-
-endmodule
-
-module xor4_0(IN3,IN4,IN2,IN1,OUT1);
-/* synthesis black_box */
-
-input IN3;
-input IN4;
-input IN2;
-input IN1;
-output OUT1;
-
-endmodule
-
-module xor4_1(IN3,IN4,IN2,IN1,OUT1);
-/* synthesis black_box */
-
-input IN3;
-input IN4;
-input IN2;
-input IN1;
-output OUT1;
-
-endmodule
-
-module xor4_2(IN3,IN4,IN2,IN1,OUT1);
-/* synthesis black_box */
-
-input IN3;
-input IN4;
-input IN2;
-input IN1;
-output OUT1;
 
 endmodule
