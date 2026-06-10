@@ -1931,7 +1931,7 @@ refer to the applicable agreement for further details.
 	(drawing
 		(rectangle (rect 16 16 200 128))
 	)
-	(annotation_block (parameter)(rect 552 24 728 120))
+	(annotation_block (parameter)(rect 344 384 520 480))
 )
 (connector
 	(text "state[0]" (rect 208 64 244 81)(font "Intel Clear" ))
@@ -2324,10 +2324,6 @@ refer to the applicable agreement for further details.
 	(pt 256 -64)
 )
 (connector
-	(pt 336 -40)
-	(pt 984 -40)
-)
-(connector
 	(pt 568 168)
 	(pt 552 168)
 )
@@ -2338,18 +2334,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 336 -48)
 	(pt 336 -40)
-)
-(connector
-	(pt 336 -40)
-	(pt 336 152)
-)
-(connector
-	(pt 336 152)
-	(pt 336 168)
-)
-(connector
-	(pt 336 168)
-	(pt 336 184)
 )
 (connector
 	(pt 192 216)
@@ -2366,14 +2350,6 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 584 184)
 	(pt 584 272)
-)
-(connector
-	(pt 208 152)
-	(pt 336 152)
-)
-(connector
-	(pt 256 168)
-	(pt 336 168)
 )
 (connector
 	(pt 312 200)
@@ -2760,10 +2736,6 @@ refer to the applicable agreement for further details.
 	(pt 1624 312)
 )
 (connector
-	(pt 568 120)
-	(pt 368 120)
-)
-(connector
 	(pt 320 280)
 	(pt 320 64)
 )
@@ -2776,32 +2748,8 @@ refer to the applicable agreement for further details.
 	(pt 256 168)
 )
 (connector
-	(pt 368 0)
-	(pt 368 32)
-)
-(connector
-	(pt 368 32)
-	(pt 368 64)
-)
-(connector
-	(pt 368 64)
-	(pt 368 120)
-)
-(connector
-	(pt 208 96)
-	(pt 208 152)
-)
-(connector
-	(pt 208 152)
-	(pt 208 184)
-)
-(connector
 	(pt 256 32)
 	(pt 368 32)
-)
-(connector
-	(pt 320 64)
-	(pt 368 64)
 )
 (connector
 	(pt 208 96)
@@ -2932,6 +2880,54 @@ refer to the applicable agreement for further details.
 	(pt 1848 264)
 	(pt 1848 288)
 )
+(connector
+	(pt 328 -40)
+	(pt 336 -40)
+)
+(connector
+	(pt 336 -40)
+	(pt 984 -40)
+)
+(connector
+	(pt 336 184)
+	(pt 328 184)
+)
+(connector
+	(pt 328 -40)
+	(pt 328 184)
+)
+(connector
+	(pt 336 168)
+	(pt 256 168)
+)
+(connector
+	(pt 336 152)
+	(pt 208 152)
+)
+(connector
+	(pt 208 96)
+	(pt 208 152)
+)
+(connector
+	(pt 208 152)
+	(pt 208 184)
+)
+(connector
+	(pt 568 120)
+	(pt 352 120)
+)
+(connector
+	(pt 368 0)
+	(pt 352 0)
+)
+(connector
+	(pt 352 0)
+	(pt 352 120)
+)
+(connector
+	(pt 320 64)
+	(pt 368 64)
+)
 (junction (pt 128 40))
 (junction (pt 984 8))
 (junction (pt 984 96))
@@ -2944,7 +2940,6 @@ refer to the applicable agreement for further details.
 (junction (pt 1080 0))
 (junction (pt 1080 96))
 (junction (pt 984 -24))
-(junction (pt 208 152))
 (junction (pt 336 -40))
 (junction (pt 256 32))
 (junction (pt 584 184))
@@ -2956,8 +2951,6 @@ refer to the applicable agreement for further details.
 (junction (pt 792 160))
 (junction (pt 792 112))
 (junction (pt 792 64))
-(junction (pt 336 152))
-(junction (pt 336 168))
 (junction (pt 1280 0))
 (junction (pt 1280 200))
 (junction (pt 1328 96))
@@ -2970,6 +2963,5 @@ refer to the applicable agreement for further details.
 (junction (pt 1304 200))
 (junction (pt 808 272))
 (junction (pt 792 264))
-(junction (pt 368 32))
-(junction (pt 368 64))
 (junction (pt 544 32))
+(junction (pt 208 152))

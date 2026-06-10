@@ -4,23 +4,39 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "OUT",
+					"name" : "data1",
 					"strict" : false
 				},
 				{
-					"name" : "IN1",
+					"name" : "data2",
 					"strict" : false
 				},
 				{
-					"name" : "IN2",
+					"name" : "data3",
 					"strict" : false
 				},
 				{
-					"name" : "IN3",
+					"name" : "data4",
 					"strict" : false
 				},
 				{
-					"name" : "IN4",
+					"name" : "0",
+					"strict" : false
+				},
+				{
+					"name" : "rx_serial",
+					"strict" : false
+				},
+				{
+					"name" : "baud_tick",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
 					"strict" : false
 				}
 			]
