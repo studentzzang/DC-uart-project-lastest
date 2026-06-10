@@ -1,5 +1,5 @@
 Analysis & Synthesis report for uart
-Wed Jun 10 16:46:38 2026
+Wed Jun 10 16:56:29 2026
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Wed Jun 10 16:46:38 2026           ;
+; Analysis & Synthesis Status ; Failed - Wed Jun 10 16:56:29 2026           ;
 ; Quartus Prime Version       ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name               ; uart                                        ;
 ; Top-level Entity Name       ; rx                                          ;
@@ -146,8 +146,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 12          ;
-; Maximum allowed            ; 6           ;
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 8           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -222,10 +222,10 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Jun 10 16:46:27 2026
+    Info: Processing started: Wed Jun 10 16:56:11 2026
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off uart -c uart
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
+Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file top.bdf
     Info (12023): Found entity 1: top
 Info (12021): Found 1 design units, including 1 entities, in source file rx.bdf
@@ -234,6 +234,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file baud_ge
     Info (12023): Found entity 1: baud_gen_
 Info (12021): Found 1 design units, including 1 entities, in source file tx.bdf
     Info (12023): Found entity 1: tx
+Warning (12019): Can't analyze file -- file d:/download_files/quartus/libraries/others/maxplus2/XOR4.bdf is missing
 Info (12127): Elaborating entity "rx" for the top level hierarchy
 Warning (275011): Block or symbol "rx_fsm" of instance "inst" overlaps another block or symbol
 Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
@@ -246,36 +247,36 @@ Warning (275008): Primitive "AND2" of instance "inst22" not used
 Warning (275008): Primitive "DFFE" of instance "inst23" not used
 Warning (275008): Primitive "DFFE" of instance "inst24" not used
 Warning (12125): Using design file lpm_decode_3.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: lpm_decode_3 File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 39
+    Info (12023): Found entity 1: lpm_decode_3 File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_decode_3.v Line: 39
 Info (12128): Elaborating entity "lpm_decode_3" for hierarchy "lpm_decode_3:inst28"
-Info (12128): Elaborating entity "lpm_decode" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
-Info (12130): Elaborated megafunction instantiation "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
-Info (12133): Instantiated megafunction "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" with the following parameter: File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_decode_3.v Line: 88
+Info (12128): Elaborating entity "lpm_decode" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_decode_3.v Line: 88
+Info (12130): Elaborated megafunction instantiation "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_decode_3.v Line: 88
+Info (12133): Instantiated megafunction "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component" with the following parameter: File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_decode_3.v Line: 88
     Info (12134): Parameter "lpm_decodes" = "8"
     Info (12134): Parameter "lpm_type" = "LPM_DECODE"
     Info (12134): Parameter "lpm_width" = "3"
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_04f.tdf
-    Info (12023): Found entity 1: decode_04f File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/decode_04f.tdf Line: 22
-Info (12128): Elaborating entity "decode_04f" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component|decode_04f:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
+    Info (12023): Found entity 1: decode_04f File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/decode_04f.tdf Line: 22
+Info (12128): Elaborating entity "decode_04f" for hierarchy "lpm_decode_3:inst28|lpm_decode:LPM_DECODE_component|decode_04f:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_decode.tdf Line: 76
 Warning (12125): Using design file lpm_counter_3.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: lpm_counter_3 File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 39
+    Info (12023): Found entity 1: lpm_counter_3 File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_3.v Line: 39
 Info (12128): Elaborating entity "lpm_counter_3" for hierarchy "lpm_counter_3:inst26"
-Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
-Info (12130): Elaborated megafunction instantiation "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
-Info (12133): Instantiated megafunction "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/lpm_counter_3.v Line: 70
+Info (12128): Elaborating entity "lpm_counter" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_3.v Line: 70
+Info (12130): Elaborated megafunction instantiation "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_3.v Line: 70
+Info (12133): Instantiated megafunction "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component" with the following parameter: File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/lpm_counter_3.v Line: 70
     Info (12134): Parameter "lpm_direction" = "UP"
     Info (12134): Parameter "lpm_modulus" = "7"
     Info (12134): Parameter "lpm_port_updown" = "PORT_UNUSED"
     Info (12134): Parameter "lpm_type" = "LPM_COUNTER"
     Info (12134): Parameter "lpm_width" = "3"
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ddk.tdf
-    Info (12023): Found entity 1: cntr_ddk File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_ddk.tdf Line: 27
-Info (12128): Elaborating entity "cntr_ddk" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated" File: d:/download_files/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
+    Info (12023): Found entity 1: cntr_ddk File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/cntr_ddk.tdf Line: 27
+Info (12128): Elaborating entity "cntr_ddk" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated" File: c:/intelfpga_lite/18.1/quartus/libraries/megafunctions/lpm_counter.tdf Line: 258
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_b9c.tdf
-    Info (12023): Found entity 1: cmpr_b9c File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cmpr_b9c.tdf Line: 22
-Info (12128): Elaborating entity "cmpr_b9c" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated|cmpr_b9c:cmpr1" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/db/cntr_ddk.tdf Line: 37
+    Info (12023): Found entity 1: cmpr_b9c File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/cmpr_b9c.tdf Line: 22
+Info (12128): Elaborating entity "cmpr_b9c" for hierarchy "lpm_counter_3:inst26|lpm_counter:LPM_COUNTER_component|cntr_ddk:auto_generated|cmpr_b9c:cmpr1" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/db/cntr_ddk.tdf Line: 37
 Warning (12125): Using design file rx_fsm.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: rx_fsm File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/rx_fsm.v Line: 22
+    Info (12023): Found entity 1: rx_fsm File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/rx_fsm.v Line: 22
 Info (12128): Elaborating entity "rx_fsm" for hierarchy "rx_fsm:inst"
 Info (12128): Elaborating entity "74138" for hierarchy "74138:inst5"
 Info (12130): Elaborated megafunction instantiation "74138:inst5"
@@ -284,11 +285,11 @@ Error (12014): Net "gdfx_temp0", which fans out to "inst31", cannot be assigned 
     Error (12015): Net is fed by "reset"
     Error (12015): Net is fed by "inst2"
     Error (12015): Net is fed by "clk"
-    Error (12015): Net is fed by "rx_fsm:inst|clear_bit_index" File: C:/Users/USER/OneDrive/Desktop/DC-uart-project/rx_fsm.v Line: 36
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 14 warnings
-    Error: Peak virtual memory: 4792 megabytes
-    Error: Processing ended: Wed Jun 10 16:46:38 2026
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:20
+    Error (12015): Net is fed by "rx_fsm:inst|clear_bit_index" File: C:/github/digitalsystem_teamproject/DC-uart-project-lastest/rx_fsm.v Line: 36
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 6 errors, 15 warnings
+    Error: Peak virtual memory: 4804 megabytes
+    Error: Processing ended: Wed Jun 10 16:56:29 2026
+    Error: Elapsed time: 00:00:18
+    Error: Total CPU time (on all processors): 00:00:28
 
 
