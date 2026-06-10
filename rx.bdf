@@ -2424,42 +2424,6 @@ refer to the applicable agreement for further details.
 	(pt 1672 384)
 )
 (connector
-	(pt 1848 216)
-	(pt 1848 200)
-)
-(connector
-	(pt 1840 216)
-	(pt 1848 216)
-)
-(connector
-	(pt 1848 200)
-	(pt 1856 200)
-)
-(connector
-	(pt 1840 248)
-	(pt 1848 248)
-)
-(connector
-	(pt 1856 232)
-	(pt 1848 232)
-)
-(connector
-	(pt 1848 232)
-	(pt 1848 248)
-)
-(connector
-	(pt 1840 264)
-	(pt 1856 264)
-)
-(connector
-	(pt 1840 280)
-	(pt 1856 280)
-)
-(connector
-	(pt 1856 280)
-	(pt 1856 288)
-)
-(connector
 	(pt 1064 8)
 	(pt 1064 -40)
 )
@@ -2939,6 +2903,34 @@ refer to the applicable agreement for further details.
 (connector
 	(pt 984 192)
 	(pt 984 288)
+)
+(connector
+	(pt 1856 200)
+	(pt 1840 200)
+)
+(connector
+	(pt 1856 232)
+	(pt 1840 232)
+)
+(connector
+	(pt 1840 248)
+	(pt 1856 248)
+)
+(connector
+	(pt 1856 248)
+	(pt 1856 264)
+)
+(connector
+	(pt 1856 288)
+	(pt 1848 288)
+)
+(connector
+	(pt 1840 264)
+	(pt 1848 264)
+)
+(connector
+	(pt 1848 264)
+	(pt 1848 288)
 )
 (junction (pt 128 40))
 (junction (pt 984 8))
