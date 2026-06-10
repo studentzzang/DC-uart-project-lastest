@@ -1,8 +1,8 @@
 /*<simulation_settings>
-<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/github/digitalsystem_teamproject/DC-uart-project/Waveform1.vwf" --testbench_file="C:/github/digitalsystem_teamproject/DC-uart-project/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
-<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/github/digitalsystem_teamproject/DC-uart-project/Waveform1.vwf" --testbench_file="C:/github/digitalsystem_teamproject/DC-uart-project/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
-<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/github/digitalsystem_teamproject/DC-uart-project/simulation/qsim/" uart -c uart</fnetlist_cmd>
-<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/github/digitalsystem_teamproject/DC-uart-project/simulation/qsim/" uart -c uart</tnetlist_cmd>
+<ftestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform1.vwf" --testbench_file="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform1.vwf.vt"</ftestbench_cmd>
+<ttestbench_cmd>quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off uart -c uart --vector_source="C:/Users/USER/OneDrive/Desktop/DC-uart-project/Waveform1.vwf" --testbench_file="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/Waveform1.vwf.vt"</ttestbench_cmd>
+<fnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/" uart -c uart</fnetlist_cmd>
+<tnetlist_cmd>quartus_eda --write_settings_files=off --simulation --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory="C:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim/" uart -c uart</tnetlist_cmd>
 <modelsim_script>onerror {exit -code 1}
 vlib work
 vlog -work work uart.vo
@@ -20,9 +20,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -41,9 +38,6 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
-
-
-
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -105,50 +99,10 @@ SIGNAL("data_in")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 4;
 	LSB_INDEX = 0;
 	DIRECTION = INPUT;
 	PARENT = "";
-}
-
-SIGNAL("data_in[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "data_in";
-}
-
-SIGNAL("data_in[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "data_in";
-}
-
-SIGNAL("data_in[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "data_in";
-}
-
-SIGNAL("data_in[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = INPUT;
-	PARENT = "data_in";
 }
 
 SIGNAL("data_in[3]")
@@ -195,50 +149,10 @@ SIGNAL("data_out")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 4;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("data_out[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "data_out";
-}
-
-SIGNAL("data_out[6]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "data_out";
-}
-
-SIGNAL("data_out[5]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "data_out";
-}
-
-SIGNAL("data_out[4]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "data_out";
 }
 
 SIGNAL("data_out[3]")
@@ -282,6 +196,16 @@ SIGNAL("data_out[0]")
 }
 
 SIGNAL("data_ready")
+{
+	VALUE_TYPE = NINE_LEVEL_BIT;
+	SIGNAL_TYPE = SINGLE_BIT;
+	WIDTH = 1;
+	LSB_INDEX = -1;
+	DIRECTION = INPUT;
+	PARENT = "";
+}
+
+SIGNAL("noise")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -341,7 +265,7 @@ SIGNAL("rx_cnt[0]")
 	PARENT = "rx_cnt";
 }
 
-SIGNAL("tx_cmt")
+SIGNAL("tx_cnt")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
@@ -351,34 +275,34 @@ SIGNAL("tx_cmt")
 	PARENT = "";
 }
 
-SIGNAL("tx_cmt[2]")
+SIGNAL("tx_cnt[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "tx_cmt";
+	PARENT = "tx_cnt";
 }
 
-SIGNAL("tx_cmt[1]")
+SIGNAL("tx_cnt[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "tx_cmt";
+	PARENT = "tx_cnt";
 }
 
-SIGNAL("tx_cmt[0]")
+SIGNAL("tx_cnt[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "tx_cmt";
+	PARENT = "tx_cnt";
 }
 
 SIGNAL("tx_sel")
@@ -421,16 +345,7 @@ SIGNAL("tx_serial")
 	PARENT = "";
 }
 
-<<<<<<< HEAD:Waveform.vwf
-TRANSITION_LIST("baud_tick")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3000.0;
-	}
-=======
-SIGNAL("noise")
+SIGNAL("zero")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -438,7 +353,15 @@ SIGNAL("noise")
 	LSB_INDEX = -1;
 	DIRECTION = INPUT;
 	PARENT = "";
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
+}
+
+TRANSITION_LIST("baud_tick")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL X FOR 3000.0;
+	}
 }
 
 TRANSITION_LIST("clk")
@@ -455,60 +378,12 @@ TRANSITION_LIST("clk")
 	}
 }
 
-TRANSITION_LIST("data_in[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_in[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 0 FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_in[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL 1 FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_in[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-<<<<<<< HEAD:Waveform.vwf
-		LEVEL 1 FOR 3000.0;
-=======
-		LEVEL 1 FOR 1590.0;
-		LEVEL 0 FOR 910.0;
-		LEVEL 1 FOR 1500.0;
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
-	}
-}
-
 TRANSITION_LIST("data_in[3]")
 {
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD:Waveform.vwf
-		LEVEL 0 FOR 3000.0;
-=======
-		LEVEL 1 FOR 1590.0;
-		LEVEL 0 FOR 910.0;
-		LEVEL 1 FOR 1500.0;
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
+		LEVEL 1 FOR 3000.0;
 	}
 }
 
@@ -517,7 +392,7 @@ TRANSITION_LIST("data_in[2]")
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 1 FOR 3000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -526,13 +401,7 @@ TRANSITION_LIST("data_in[1]")
 	NODE
 	{
 		REPEAT = 1;
-<<<<<<< HEAD:Waveform.vwf
 		LEVEL 0 FOR 3000.0;
-=======
-		LEVEL 1 FOR 1590.0;
-		LEVEL 0 FOR 910.0;
-		LEVEL 1 FOR 1500.0;
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
 	}
 }
 
@@ -542,42 +411,6 @@ TRANSITION_LIST("data_in[0]")
 	{
 		REPEAT = 1;
 		LEVEL 1 FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_out[7]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_out[6]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_out[5]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3000.0;
-	}
-}
-
-TRANSITION_LIST("data_out[4]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 3000.0;
 	}
 }
 
@@ -623,14 +456,17 @@ TRANSITION_LIST("data_ready")
 	{
 		REPEAT = 1;
 		LEVEL 0 FOR 20.0;
-		LEVEL 1 FOR 120.0;
-<<<<<<< HEAD:Waveform.vwf
-		LEVEL 0 FOR 2860.0;
-=======
-		LEVEL 0 FOR 1470.0;
-		LEVEL 1 FOR 150.0;
-		LEVEL 0 FOR 2250.0;
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
+		LEVEL 1 FOR 140.0;
+		LEVEL 0 FOR 2840.0;
+	}
+}
+
+TRANSITION_LIST("noise")
+{
+	NODE
+	{
+		REPEAT = 1;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -671,7 +507,7 @@ TRANSITION_LIST("rx_cnt[0]")
 	}
 }
 
-TRANSITION_LIST("tx_cmt[2]")
+TRANSITION_LIST("tx_cnt[2]")
 {
 	NODE
 	{
@@ -680,7 +516,7 @@ TRANSITION_LIST("tx_cmt[2]")
 	}
 }
 
-TRANSITION_LIST("tx_cmt[1]")
+TRANSITION_LIST("tx_cnt[1]")
 {
 	NODE
 	{
@@ -689,7 +525,7 @@ TRANSITION_LIST("tx_cmt[1]")
 	}
 }
 
-TRANSITION_LIST("tx_cmt[0]")
+TRANSITION_LIST("tx_cnt[0]")
 {
 	NODE
 	{
@@ -725,12 +561,12 @@ TRANSITION_LIST("tx_serial")
 	}
 }
 
-TRANSITION_LIST("noise")
+TRANSITION_LIST("zero")
 {
 	NODE
 	{
 		REPEAT = 1;
-		LEVEL 0 FOR 4000.0;
+		LEVEL 0 FOR 3000.0;
 	}
 }
 
@@ -759,12 +595,12 @@ DISPLAY_LINE
 	RADIX = Binary;
 	TREE_INDEX = 2;
 	TREE_LEVEL = 0;
-	CHILDREN = 3, 4, 5, 6, 7, 8, 9, 10;
+	CHILDREN = 3, 4, 5, 6;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "data_in[7]";
+	CHANNEL = "data_in[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -774,7 +610,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "data_in[6]";
+	CHANNEL = "data_in[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -784,7 +620,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "data_in[5]";
+	CHANNEL = "data_in[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -794,7 +630,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "data_in[4]";
+	CHANNEL = "data_in[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -804,92 +640,12 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "data_in[3]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 7;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_in[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 8;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_in[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 9;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_in[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 10;
-	TREE_LEVEL = 1;
-	PARENT = 2;
-}
-
-DISPLAY_LINE
-{
 	CHANNEL = "data_out";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 11;
+	TREE_INDEX = 7;
 	TREE_LEVEL = 0;
-	CHILDREN = 12, 13, 14, 15, 16, 17, 18, 19;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_out[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 12;
-	TREE_LEVEL = 1;
-	PARENT = 11;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_out[6]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 13;
-	TREE_LEVEL = 1;
-	PARENT = 11;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_out[5]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 14;
-	TREE_LEVEL = 1;
-	PARENT = 11;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "data_out[4]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Binary;
-	TREE_INDEX = 15;
-	TREE_LEVEL = 1;
-	PARENT = 11;
+	CHILDREN = 8, 9, 10, 11;
 }
 
 DISPLAY_LINE
@@ -897,9 +653,9 @@ DISPLAY_LINE
 	CHANNEL = "data_out[3]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 16;
+	TREE_INDEX = 8;
 	TREE_LEVEL = 1;
-	PARENT = 11;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
@@ -907,9 +663,9 @@ DISPLAY_LINE
 	CHANNEL = "data_out[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 17;
+	TREE_INDEX = 9;
 	TREE_LEVEL = 1;
-	PARENT = 11;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
@@ -917,9 +673,9 @@ DISPLAY_LINE
 	CHANNEL = "data_out[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 18;
+	TREE_INDEX = 10;
 	TREE_LEVEL = 1;
-	PARENT = 11;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
@@ -927,9 +683,9 @@ DISPLAY_LINE
 	CHANNEL = "data_out[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 19;
+	TREE_INDEX = 11;
 	TREE_LEVEL = 1;
-	PARENT = 11;
+	PARENT = 7;
 }
 
 DISPLAY_LINE
@@ -937,7 +693,16 @@ DISPLAY_LINE
 	CHANNEL = "data_ready";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 20;
+	TREE_INDEX = 12;
+	TREE_LEVEL = 0;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "noise";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 13;
 	TREE_LEVEL = 0;
 }
 
@@ -946,23 +711,18 @@ DISPLAY_LINE
 	CHANNEL = "reset";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 21;
+	TREE_INDEX = 14;
 	TREE_LEVEL = 0;
 }
 
 DISPLAY_LINE
 {
-<<<<<<< HEAD:Waveform.vwf
 	CHANNEL = "rx_cnt";
-=======
-	CHANNEL = "noise";
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 22;
+	TREE_INDEX = 15;
 	TREE_LEVEL = 0;
-<<<<<<< HEAD:Waveform.vwf
-	CHILDREN = 23, 24, 25;
+	CHILDREN = 16, 17, 18;
 }
 
 DISPLAY_LINE
@@ -970,9 +730,9 @@ DISPLAY_LINE
 	CHANNEL = "rx_cnt[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 23;
+	TREE_INDEX = 16;
 	TREE_LEVEL = 1;
-	PARENT = 22;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
@@ -980,9 +740,9 @@ DISPLAY_LINE
 	CHANNEL = "rx_cnt[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 24;
+	TREE_INDEX = 17;
 	TREE_LEVEL = 1;
-	PARENT = 22;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
@@ -990,49 +750,49 @@ DISPLAY_LINE
 	CHANNEL = "rx_cnt[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 25;
+	TREE_INDEX = 18;
 	TREE_LEVEL = 1;
-	PARENT = 22;
+	PARENT = 15;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_cmt";
+	CHANNEL = "tx_cnt";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 26;
+	TREE_INDEX = 19;
 	TREE_LEVEL = 0;
-	CHILDREN = 27, 28, 29;
+	CHILDREN = 20, 21, 22;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_cmt[2]";
+	CHANNEL = "tx_cnt[2]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 27;
+	TREE_INDEX = 20;
 	TREE_LEVEL = 1;
-	PARENT = 26;
+	PARENT = 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_cmt[1]";
+	CHANNEL = "tx_cnt[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 28;
+	TREE_INDEX = 21;
 	TREE_LEVEL = 1;
-	PARENT = 26;
+	PARENT = 19;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "tx_cmt[0]";
+	CHANNEL = "tx_cnt[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 29;
+	TREE_INDEX = 22;
 	TREE_LEVEL = 1;
-	PARENT = 26;
+	PARENT = 19;
 }
 
 DISPLAY_LINE
@@ -1040,9 +800,9 @@ DISPLAY_LINE
 	CHANNEL = "tx_sel";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 30;
+	TREE_INDEX = 23;
 	TREE_LEVEL = 0;
-	CHILDREN = 31, 32;
+	CHILDREN = 24, 25;
 }
 
 DISPLAY_LINE
@@ -1050,9 +810,9 @@ DISPLAY_LINE
 	CHANNEL = "tx_sel[1]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 31;
+	TREE_INDEX = 24;
 	TREE_LEVEL = 1;
-	PARENT = 30;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
@@ -1060,9 +820,9 @@ DISPLAY_LINE
 	CHANNEL = "tx_sel[0]";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 32;
+	TREE_INDEX = 25;
 	TREE_LEVEL = 1;
-	PARENT = 30;
+	PARENT = 23;
 }
 
 DISPLAY_LINE
@@ -1070,10 +830,17 @@ DISPLAY_LINE
 	CHANNEL = "tx_serial";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
-	TREE_INDEX = 33;
+	TREE_INDEX = 26;
 	TREE_LEVEL = 0;
-=======
->>>>>>> 5d7e864e6d63e7350733ed0081d241e61eaad81b:Waveform1.vwf
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "zero";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 27;
+	TREE_LEVEL = 0;
 }
 
 TIME_BAR

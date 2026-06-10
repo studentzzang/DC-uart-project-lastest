@@ -14,7 +14,7 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Mon Jun 08 20:19:10 2026"
+// CREATED		"Thu Jun 11 01:30:29 2026"
 
 module tx(
 	data_ready,
@@ -32,14 +32,14 @@ input wire	data_ready;
 input wire	clk;
 input wire	reset;
 input wire	baud_tick;
-input wire	[7:0] data_in;
+input wire	[3:0] data_in;
 output wire	tx_serial;
 output wire	[2:0] tx_cnt;
 output wire	[1:0] tx_sel;
 
 wire	tx_bit_7;
 wire	[2:0] tx_bit_cnt;
-reg	[7:0] tx_reg;
+reg	[3:0] tx_reg;
 wire	tx_reg_clk;
 wire	[1:0] tx_sel_ALTERA_SYNTHESIZED;
 wire	SYNTHESIZED_WIRE_0;
@@ -50,10 +50,17 @@ wire	SYNTHESIZED_WIRE_4;
 wire	SYNTHESIZED_WIRE_5;
 wire	SYNTHESIZED_WIRE_6;
 wire	SYNTHESIZED_WIRE_7;
+wire	SYNTHESIZED_WIRE_8;
+wire	SYNTHESIZED_WIRE_9;
+wire	SYNTHESIZED_WIRE_10;
+wire	SYNTHESIZED_WIRE_11;
+wire	SYNTHESIZED_WIRE_12;
+wire	SYNTHESIZED_WIRE_13;
+wire	SYNTHESIZED_WIRE_14;
 
-assign	SYNTHESIZED_WIRE_4 = 1;
-assign	SYNTHESIZED_WIRE_6 = 0;
-assign	SYNTHESIZED_WIRE_7 = 1;
+assign	SYNTHESIZED_WIRE_2 = 1;
+assign	SYNTHESIZED_WIRE_4 = 0;
+assign	SYNTHESIZED_WIRE_5 = 1;
 
 
 
@@ -64,9 +71,9 @@ tx_fsm	b2v_inst(
 	.baud_tick(baud_tick),
 	.data_ready(data_ready),
 	.tx_bit_7(tx_bit_7),
-	.tx_load_data(SYNTHESIZED_WIRE_3),
+	.tx_load_data(SYNTHESIZED_WIRE_14),
 	.tx_clear_bit(SYNTHESIZED_WIRE_0),
-	.tx_count_en(SYNTHESIZED_WIRE_2),
+	.tx_count_en(SYNTHESIZED_WIRE_13),
 	
 	.tx_state_start(tx_sel_ALTERA_SYNTHESIZED[0]),
 	.tx_state_data(tx_sel_ALTERA_SYNTHESIZED[1])
@@ -85,6 +92,18 @@ lpm_counter_3	b2v_inst1(
 	.q(tx_bit_cnt));
 
 
+lpm_mux_4to1_bb	b2v_inst13(
+	.data3(SYNTHESIZED_WIRE_2),
+	.data2(SYNTHESIZED_WIRE_3),
+	.data1(SYNTHESIZED_WIRE_4),
+	.data0(SYNTHESIZED_WIRE_5),
+	.sel(tx_sel_ALTERA_SYNTHESIZED),
+	.result(tx_serial));
+
+
+
+
+
 always@(posedge tx_reg_clk)
 begin
 	begin
@@ -92,7 +111,7 @@ begin
 	end
 end
 
-assign	tx_bit_7 = tx_bit_cnt[2] & tx_bit_cnt[1] & tx_bit_cnt[0];
+assign	tx_bit_7 = tx_bit_cnt[2] & tx_bit_cnt[1] & SYNTHESIZED_WIRE_6;
 
 
 always@(posedge tx_reg_clk)
@@ -111,65 +130,35 @@ begin
 end
 
 
-always@(posedge tx_reg_clk)
-begin
-	begin
-	tx_reg[4] <= data_in[4];
-	end
-end
-
-
-
-always@(posedge tx_reg_clk)
-begin
-	begin
-	tx_reg[5] <= data_in[5];
-	end
-end
-
-
-always@(posedge tx_reg_clk)
-begin
-	begin
-	tx_reg[6] <= data_in[6];
-	end
-end
-
-
-always@(posedge tx_reg_clk)
-begin
-	begin
-	tx_reg[7] <= data_in[7];
-	end
-end
-
-assign	SYNTHESIZED_WIRE_1 = SYNTHESIZED_WIRE_2 & baud_tick;
-
-assign	tx_reg_clk = SYNTHESIZED_WIRE_3 & data_ready;
-
-
-lpm_mux_8	b2v_inst41(
-	.data7(tx_reg[7]),
-	.data6(tx_reg[6]),
-	.data5(tx_reg[5]),
-	.data4(tx_reg[4]),
-	.data3(tx_reg[3]),
-	.data2(tx_reg[2]),
-	.data1(tx_reg[1]),
-	.data0(tx_reg[0]),
+lpm_mux_8	b2v_inst22(
+	
+	.data6(tx_reg[3]),
+	.data5(tx_reg[2]),
+	.data4(tx_reg[1]),
+	.data3(SYNTHESIZED_WIRE_7),
+	.data2(tx_reg[0]),
+	.data1(SYNTHESIZED_WIRE_8),
+	.data0(SYNTHESIZED_WIRE_9),
 	.sel(tx_bit_cnt),
-	.result(SYNTHESIZED_WIRE_5));
+	.result(SYNTHESIZED_WIRE_3));
 
+assign	SYNTHESIZED_WIRE_10 = tx_reg[0] ^ tx_reg[1];
 
-lpm_mux_4to1	b2v_inst43(
-	.data3(SYNTHESIZED_WIRE_4),
-	.data2(SYNTHESIZED_WIRE_5),
-	.data1(SYNTHESIZED_WIRE_6),
-	.data0(SYNTHESIZED_WIRE_7),
-	.sel(tx_sel_ALTERA_SYNTHESIZED),
-	.result(tx_serial));
+assign	SYNTHESIZED_WIRE_9 = SYNTHESIZED_WIRE_10 ^ tx_reg[3];
 
+assign	SYNTHESIZED_WIRE_11 = tx_reg[0] ^ tx_reg[2];
 
+assign	SYNTHESIZED_WIRE_8 = SYNTHESIZED_WIRE_11 ^ tx_reg[3];
+
+assign	SYNTHESIZED_WIRE_12 = tx_reg[1] ^ tx_reg[2];
+
+assign	SYNTHESIZED_WIRE_7 = SYNTHESIZED_WIRE_12 ^ tx_reg[3];
+
+assign	SYNTHESIZED_WIRE_1 = SYNTHESIZED_WIRE_13 & baud_tick;
+
+assign	tx_reg_clk = SYNTHESIZED_WIRE_14 & data_ready;
+
+assign	SYNTHESIZED_WIRE_6 =  ~tx_bit_cnt[0];
 
 
 always@(posedge tx_reg_clk)

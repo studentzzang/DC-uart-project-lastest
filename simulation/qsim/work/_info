@@ -9,128 +9,128 @@ z2
 cModel Technology
 Z0 dD:/Projects/dc-UART/simulation/qsim
 vtop
-Z1 !s110 1780919539
+Z1 !s110 1781110400
 !i10b 1
-!s100 cQm9KSHBKa3G@G=kE9M>a2
-IbIDiKR9jgf^6I8c9Gm2oA0
+!s100 :2[C6AMWH9@D3WP0DYk6^3
+IUYMc^_<531NELE^0TIbFm1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
-R0
-w1780919534
-Z3 8uart.vo
-Z4 Fuart.vo
-Z5 L0 31
-Z6 OV;L;10.5b;63
+Z3 dC:/Users/USER/OneDrive/Desktop/DC-uart-project/simulation/qsim
+w1781110399
+Z4 8uart.vo
+Z5 Fuart.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
 r1
 !s85 0
 31
-!s108 1780919538.000000
-Z7 !s107 uart.vo|
-Z8 !s90 -work|work|uart.vo|
+!s108 1781110399.000000
+Z8 !s107 uart.vo|
+Z9 !s90 -work|work|uart.vo|
 !i113 1
-Z9 o-work work
-Z10 tCvgOpt 0
+Z10 o-work work
+Z11 tCvgOpt 0
 vtop_vlg_vec_tst
 R1
 !i10b 1
-!s100 D9R?O^h6MYAKn:c?jJOHY3
-IDnd?amMMGmb0M7zQ6ilYF1
+!s100 =jV745m5[DDc:WX0ol06F3
+I77_9Uh@97U43N?;DVbOmB3
 R2
-R0
-w1780919532
-Z11 8Waveform.vwf.vt
-Z12 FWaveform.vwf.vt
-Z13 L0 29
-R6
+R3
+w1781110397
+8Waveform3.vwf.vt
+FWaveform3.vwf.vt
+Z12 L0 29
+R7
 r1
 !s85 0
 31
-!s108 1780919539.000000
-!s107 Waveform.vwf.vt|
-Z14 !s90 -work|work|Waveform.vwf.vt|
+!s108 1781110400.000000
+!s107 Waveform3.vwf.vt|
+!s90 -work|work|Waveform3.vwf.vt|
 !i113 1
-R9
 R10
+R11
 vtx
-Z15 !s110 1779898981
+Z13 !s110 1779898981
 !i10b 1
 !s100 aJ2YF4:08gdh4LoO5;8l>0
 Ik9cLB0C>T99KhO]lD2I8?1
 R2
 R0
 w1779898977
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
-Z16 !s108 1779898981.000000
-R7
+Z14 !s108 1779898981.000000
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 vtx_vlg_vec_tst
-R15
+R13
 !i10b 1
 !s100 7Ueg_YG0`I2WlfTd]N3Qz0
 I0@fEVj0MAW@EQlNVZ=3>N3
 R2
 R0
 w1779898975
-R11
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
 R12
-R13
-R6
+R7
 r1
 !s85 0
 31
-R16
-!s107 Waveform.vwf.vt|
 R14
+Z17 !s107 Waveform.vwf.vt|
+Z18 !s90 -work|work|Waveform.vwf.vt|
 !i113 1
-R9
 R10
+R11
 vuart
-Z17 !s110 1780285940
+Z19 !s110 1780285940
 !i10b 1
 !s100 UCnVz1BSD4`=fP<a1SB323
 IB^@6<iT:J19S6j1Jf0h9T3
 R2
 R0
 w1780285934
-R3
 R4
 R5
 R6
+R7
 r1
 !s85 0
 31
 !s108 1780285939.000000
-R7
 R8
-!i113 1
 R9
+!i113 1
 R10
+R11
 vuart_vlg_vec_tst
-R17
+R19
 !i10b 1
 !s100 1j7LdDoVRI2=3j1hXAD>G0
 IZToQCj8U4J^n^2XPCCzFX2
 R2
 R0
 w1780285932
-R11
+R15
+R16
 R12
-R13
-R6
+R7
 r1
 !s85 0
 31
 !s108 1780285940.000000
-!s107 Waveform.vwf.vt|
-R14
+R17
+R18
 !i113 1
-R9
 R10
+R11

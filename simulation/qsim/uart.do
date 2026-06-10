@@ -1,7 +1,7 @@
 onerror {exit -code 1}
 vlib work
 vlog -work work uart.vo
-vlog -work work Waveform.vwf.vt
+vlog -work work Waveform3.vwf.vt
 vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.top_vlg_vec_tst
 vcd file -direction uart.msim.vcd
 vcd add -internal top_vlg_vec_tst/*

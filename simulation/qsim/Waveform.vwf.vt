@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/08/2026 20:52:12"
+// Generated on "06/11/2026 01:11:25"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          top
 // 
@@ -29,35 +29,45 @@
 module top_vlg_vec_tst();
 // constants                                           
 // general purpose registers
+reg 0;
 reg clk;
-reg [7:0] data_in;
+reg [3:0] data_in;
 reg data_ready;
+reg noise;
 reg reset;
 // wires                                               
 wire baud_tick;
-wire [7:0] data_out;
+wire [3:0] data_out;
 wire [2:0] rx_cnt;
-wire [2:0] tx_cmt;
+wire [2:0] tx_cnt;
 wire [1:0] tx_sel;
 wire tx_serial;
 
 // assign statements (if any)                          
 top i1 (
 // port map - connection between master ports and signals/registers   
+	.\0 (0),
 	.baud_tick(baud_tick),
 	.clk(clk),
 	.data_in(data_in),
 	.data_out(data_out),
 	.data_ready(data_ready),
+	.noise(noise),
 	.reset(reset),
 	.rx_cnt(rx_cnt),
-	.tx_cmt(tx_cmt),
+	.tx_cnt(tx_cnt),
 	.tx_sel(tx_sel),
 	.tx_serial(tx_serial)
 );
 initial 
 begin 
 #3000000 $finish;
+end 
+
+// 0
+initial
+begin
+	0 = 1'b0;
 end 
 
 // clk
@@ -67,30 +77,10 @@ begin
 	clk = #5000 1'b1;
 	#5000;
 end 
-// data_in[ 7 ]
-initial
-begin
-	data_in[7] = 1'b1;
-end 
-// data_in[ 6 ]
-initial
-begin
-	data_in[6] = 1'b0;
-end 
-// data_in[ 5 ]
-initial
-begin
-	data_in[5] = 1'b1;
-end 
-// data_in[ 4 ]
-initial
-begin
-	data_in[4] = 1'b1;
-end 
 // data_in[ 3 ]
 initial
 begin
-	data_in[3] = 1'b0;
+	data_in[3] = 1'b1;
 end 
 // data_in[ 2 ]
 initial
@@ -113,7 +103,13 @@ initial
 begin
 	data_ready = 1'b0;
 	data_ready = #20000 1'b1;
-	data_ready = #120000 1'b0;
+	data_ready = #160000 1'b0;
+end 
+
+// noise
+initial
+begin
+	noise = 1'b0;
 end 
 
 // reset

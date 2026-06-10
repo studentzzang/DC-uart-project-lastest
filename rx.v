@@ -14,14 +14,14 @@
 
 // PROGRAM		"Quartus Prime"
 // VERSION		"Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
-// CREATED		"Wed Jun 10 19:45:58 2026"
+// CREATED		"Thu Jun 11 01:45:49 2026"
 
 module rx(
 	rx_serial,
 	clk,
 	reset,
 	baud_tick,
-	0,
+	zero,
 	data1,
 	data2,
 	data3,
@@ -34,7 +34,7 @@ input wire	rx_serial;
 input wire	clk;
 input wire	reset;
 input wire	baud_tick;
-input wire	0;
+input wire	zero;
 output wire	data1;
 output wire	data2;
 output wire	data3;
@@ -73,11 +73,11 @@ wire	SYNTHESIZED_WIRE_28;
 wire	SYNTHESIZED_WIRE_29;
 wire	SYNTHESIZED_WIRE_30;
 wire	SYNTHESIZED_WIRE_31;
-reg	DFF_inst32;
 wire	SYNTHESIZED_WIRE_32;
 wire	SYNTHESIZED_WIRE_33;
 wire	SYNTHESIZED_WIRE_34;
 wire	SYNTHESIZED_WIRE_35;
+reg	DFF_inst32;
 wire	SYNTHESIZED_WIRE_36;
 wire	SYNTHESIZED_WIRE_37;
 wire	SYNTHESIZED_WIRE_38;
@@ -91,19 +91,19 @@ wire	SYNTHESIZED_WIRE_44;
 
 
 
-assign	SYNTHESIZED_WIRE_29 = SYNTHESIZED_WIRE_0 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_33 = SYNTHESIZED_WIRE_0 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_30 = SYNTHESIZED_WIRE_2 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_34 = SYNTHESIZED_WIRE_2 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_31 = SYNTHESIZED_WIRE_4 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_35 = SYNTHESIZED_WIRE_4 & baud_tick & SYNTHESIZED_WIRE_45;
 
 assign	SYNTHESIZED_WIRE_25 = SYNTHESIZED_WIRE_6 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_26 = SYNTHESIZED_WIRE_8 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_30 = SYNTHESIZED_WIRE_8 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_27 = SYNTHESIZED_WIRE_10 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_31 = SYNTHESIZED_WIRE_10 & baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_28 = SYNTHESIZED_WIRE_12 & baud_tick & SYNTHESIZED_WIRE_45;
+assign	SYNTHESIZED_WIRE_32 = SYNTHESIZED_WIRE_12 & baud_tick & SYNTHESIZED_WIRE_45;
 
 
 rx_fsm	b2v_inst(
@@ -130,19 +130,19 @@ assign	SYNTHESIZED_WIRE_15 =  ~SYNTHESIZED_WIRE_18;
 
 assign	SYNTHESIZED_WIRE_42 =  ~SYNTHESIZED_WIRE_19;
 
-assign	SYNTHESIZED_WIRE_32 = DFF_inst29 ^ SYNTHESIZED_WIRE_47;
+assign	SYNTHESIZED_WIRE_36 = DFF_inst29 ^ SYNTHESIZED_WIRE_47;
 
 assign	SYNTHESIZED_WIRE_24 = baud_tick & SYNTHESIZED_WIRE_45;
 
-assign	SYNTHESIZED_WIRE_33 = SYNTHESIZED_WIRE_48 ^ SYNTHESIZED_WIRE_49;
+assign	SYNTHESIZED_WIRE_37 = SYNTHESIZED_WIRE_48 ^ SYNTHESIZED_WIRE_49;
 
-assign	SYNTHESIZED_WIRE_34 = DFF_inst30 ^ SYNTHESIZED_WIRE_47;
+assign	SYNTHESIZED_WIRE_38 = DFF_inst30 ^ SYNTHESIZED_WIRE_47;
 
 assign	SYNTHESIZED_WIRE_50 = ;
 
 
 
-assign	SYNTHESIZED_WIRE_35 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
+assign	SYNTHESIZED_WIRE_39 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
 
 
 lpm_counter_3	b2v_inst26(
@@ -175,71 +175,13 @@ begin
 end
 
 
-always@(posedge SYNTHESIZED_WIRE_26)
-begin
-	begin
-	DFF_inst30 <= rx_serial;
-	end
-end
-
-
-always@(posedge SYNTHESIZED_WIRE_27)
-begin
-	begin
-	SYNTHESIZED_WIRE_47 <= rx_serial;
-	end
-end
-
-
-always@(posedge SYNTHESIZED_WIRE_28)
-begin
-	begin
-	DFF_inst32 <= rx_serial;
-	end
-end
-
-
-always@(posedge SYNTHESIZED_WIRE_29)
-begin
-	begin
-	SYNTHESIZED_WIRE_48 <= rx_serial;
-	end
-end
-
-
-always@(posedge SYNTHESIZED_WIRE_30)
-begin
-	begin
-	SYNTHESIZED_WIRE_46 <= rx_serial;
-	end
-end
-
-
-always@(posedge SYNTHESIZED_WIRE_31)
-begin
-	begin
-	SYNTHESIZED_WIRE_49 <= rx_serial;
-	end
-end
-
-assign	SYNTHESIZED_WIRE_36 = DFF_inst32 ^ SYNTHESIZED_WIRE_48;
-
-assign	SYNTHESIZED_WIRE_37 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
-
-assign	SYNTHESIZED_WIRE_38 = SYNTHESIZED_WIRE_32 ^ SYNTHESIZED_WIRE_33;
-
-assign	SYNTHESIZED_WIRE_39 = SYNTHESIZED_WIRE_34 ^ SYNTHESIZED_WIRE_35;
-
-assign	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_36 ^ SYNTHESIZED_WIRE_37;
-
-
-\74138 	b2v_inst5(
-	.A(SYNTHESIZED_WIRE_38),
-	.B(SYNTHESIZED_WIRE_39),
-	.G1(SYNTHESIZED_WIRE_40),
-	.C(SYNTHESIZED_WIRE_41),
-	.G2AN(0),
-	.G2BN(0),
+dec_74138	b2v_inst3(
+	.A(SYNTHESIZED_WIRE_26),
+	.B(SYNTHESIZED_WIRE_27),
+	.C(SYNTHESIZED_WIRE_28),
+	.G1(SYNTHESIZED_WIRE_29),
+	.G2AN(zero),
+	.G2BN(zero),
 	
 	
 	.Y2N(SYNTHESIZED_WIRE_16),
@@ -249,7 +191,65 @@ assign	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_36 ^ SYNTHESIZED_WIRE_37;
 	.Y6N(SYNTHESIZED_WIRE_19)
 	);
 
-assign	SYNTHESIZED_WIRE_40 =  ~0;
+
+always@(posedge SYNTHESIZED_WIRE_30)
+begin
+	begin
+	DFF_inst30 <= rx_serial;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_31)
+begin
+	begin
+	SYNTHESIZED_WIRE_47 <= rx_serial;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_32)
+begin
+	begin
+	DFF_inst32 <= rx_serial;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_33)
+begin
+	begin
+	SYNTHESIZED_WIRE_48 <= rx_serial;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_34)
+begin
+	begin
+	SYNTHESIZED_WIRE_46 <= rx_serial;
+	end
+end
+
+
+always@(posedge SYNTHESIZED_WIRE_35)
+begin
+	begin
+	SYNTHESIZED_WIRE_49 <= rx_serial;
+	end
+end
+
+assign	SYNTHESIZED_WIRE_40 = DFF_inst32 ^ SYNTHESIZED_WIRE_48;
+
+assign	SYNTHESIZED_WIRE_41 = SYNTHESIZED_WIRE_46 ^ SYNTHESIZED_WIRE_49;
+
+assign	SYNTHESIZED_WIRE_26 = SYNTHESIZED_WIRE_36 ^ SYNTHESIZED_WIRE_37;
+
+assign	SYNTHESIZED_WIRE_27 = SYNTHESIZED_WIRE_38 ^ SYNTHESIZED_WIRE_39;
+
+assign	SYNTHESIZED_WIRE_28 = SYNTHESIZED_WIRE_40 ^ SYNTHESIZED_WIRE_41;
+
+assign	SYNTHESIZED_WIRE_29 =  ~zero;
 
 assign	data4 = SYNTHESIZED_WIRE_49 ^ SYNTHESIZED_WIRE_42;
 
